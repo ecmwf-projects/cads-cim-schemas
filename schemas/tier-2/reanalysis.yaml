@@ -1,5 +1,5 @@
-name: Satellite
-key: satellite
+name: Reanalysis
+key: reanalysis
 properties:
   - name: General
     key: 'general'
