@@ -1,0 +1,15 @@
+tasks:
+  - key: reviewer
+    ui_schemas:
+      - property: catalogue_provided_field
+        type: review
+  - key: qar-manager
+    ui_schemas:
+      - property: catalogue_provided_field
+        type: review
+    fields:
+      - id: approve_reject_section
+  - key: data-provider
+    ui_schemas:
+      - property: catalogue_provided_field
+        type: review
