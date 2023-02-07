@@ -1,0 +1,6 @@
+{
+  "{{key}}": {
+    "ui:field": "catalogProvidedField",
+    "ui:reviewField": "StringField"
+  }
+}

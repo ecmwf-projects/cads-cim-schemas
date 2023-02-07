@@ -1,0 +1,19 @@
+{
+  "{{key}}": {
+    "type": "object",
+    "required": ["data_provider_input", "quality_check"],
+    "properties": {
+      "data_provider_input": {
+        "type": "string",
+        "title": "A user guide must be available, addressing essential characteristics of reanalysis products, including uncertainties and how they are represented in the dataset.",
+        "description": "Please check if there is a user guidance is available for the dataset or not on CADS. If yes, please check if it addresses the essential characteristics of reanalysis products, including uncertainties and how they are represented in the dataset."
+      },
+      "catalogue_provided_input": {
+        "type": "string"
+      },
+      "quality_check": {
+        "type": "string"
+      }
+    }
+  }
+}
