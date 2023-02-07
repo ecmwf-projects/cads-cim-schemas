@@ -1,6 +1,30 @@
 name: In Situ
 key: in-situ
 properties:
+  - name: General
+    key: 'general'
+    properties:
+      - name: Accuracy and Consistency
+        key: 'accuracy_and_consistency'
+        properties:
+          - id: '1.1.1'
+            name: All information provided with the dataset must be accurate and consistent.
+            key: all_information_provided_with_the_dataset_must_be_accurate_and_consistent
+            property: catalogue_provided_field
+      - name: Reliable Access
+        key: 'reliable_access'
+        properties:
+          - id: '1.2.1'
+            name: Access to all information must be open, free and reliable.
+            key: access_to_all_information_must_be_open_free_and_reliable
+            property: catalogue_provided_field
+      - name: Versioning and Archiving
+        key: 'versioning_and_archiving'
+        properties:
+          - id: '1.3.1'
+            name: Adequate version control and archiving policies must be in place.
+            key: adequate_version_control_and_archiving_policies_must_be_in_place
+            property: catalogue_provided_field
   - name: Data record
     key: 'data_records'
     properties:
