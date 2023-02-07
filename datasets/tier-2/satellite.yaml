@@ -101,6 +101,8 @@ datasets:
         groups:
           - All
       - key: satellite-ocean-colour
+        groups:
+          - All
     forms:
       # General
       # Accuracy and Consistency
