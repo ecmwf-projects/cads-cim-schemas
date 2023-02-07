@@ -1,36 +1,29 @@
 datasets:
-  - key: seasonal
+  - key: climate_projections
     catalogue_entries:
-      - key: seasonal-original-single-levels
+      - key: projections-cmip6
         groups:
-          - A
-          - original
+          - cmip6
           - All
-      - key: seasonal-original-pressure-levels
+      - key: projections-cmip5-daily-single-levels
         groups:
-          - 2
-          - A
-          - original
+          - cmip5
           - All
-      - key: seasonal-monthly-single-levels
+      - key: projections-cmip5-daily-pressure-levels
         groups:
-          - B
-          - original
+          - cmip5
           - All
-      - key: seasonal-monthly-pressure-levels
+      - key: projections-cmip5-monthly-single-levels
         groups:
-          - 4
-          - B
-          - original
+          - cmip5
           - All
-      - key: seasonal-postprocessed-single-levels
+      - key: projections-cmip5-monthly-pressure-levels
         groups:
-          - postproc
+          - cmip5
           - All
-      - key: postprocessed-pressure-levels
+      - key: projections-cordex-domains-single-levels
         groups:
-          - 6
-          - postproc
+          - cordex
           - All
     forms:
       # General
@@ -53,56 +46,34 @@ datasets:
       # Consistency
       - fields:
           - 2.1.1
-          - 2.1.4
-          - 2.1.5
-          - 2.1.6
-        groups:
-          - original
-      - fields:
           - 2.1.2
           - 2.1.3
+          - 2.1.4
+        groups:
+          - cmip6
+      - fields:
+          - 2.1.5
+          - 2.1.6
           - 2.1.7
           - 2.1.8
-          - 2.1.14
         groups:
-          - postproc
+          - cmip5
       - fields:
           - 2.1.9
           - 2.1.10
-        groups:
-          - All
-      - fields:
+          - 2.1.11
           - 2.1.12
-        groups:
-          - A
-      - fields:
           - 2.1.13
         groups:
-          - B
-        groups:
-          - B
-      - fields:
-          - 2.1.11
-        groups:
-          - 2
-          - 4
-          - 6
+          - cordex
       # Uncertainty
       - fields:
           - 2.2.1
         groups:
           - All
-      - fields:
-          - 2.2.2
-        groups:
-          - All
       # Updates
       - fields:
           - 2.3.1
-        groups:
-          - All
-      - fields:
-          - 2.3.2
         groups:
           - All
       # Metadata
@@ -117,7 +88,6 @@ datasets:
           - 3.2.2
           - 3.2.3
           - 3.2.4
-          - 3.2.5
         groups:
           - All
       # Documentation
@@ -132,24 +102,21 @@ datasets:
       - fields:
           - 4.2.1
           - 4.2.2
-          - 4.2.3
         groups:
           - All
-      - fields:
-          - 4.2.4
-        groups:
-          - B
-      - fields:
-          - 4.2.5
-        groups:
-          - postproc
       # Quality Control
       - fields:
           - 4.3.1
+        groups:
+          - cmip6
+      - fields:
           - 4.3.2
+        groups:
+          - cmip5
+      - fields:
           - 4.3.3
         groups:
-          - All
+          - cordex
       # User Guidance
       - fields:
           - 4.4.1
