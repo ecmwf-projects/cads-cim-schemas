@@ -128,7 +128,7 @@ properties:
         key: 'discovery_and_use'
         properties:
           - id: '3.1.1'
-            name: 'Metadata include: Data provenance; version; variable names and units; geolocation information; see list'.
+            name: 'Metadata include: Data provenance; version; variable names and units; geolocation information; see list'
             key: metadata_include_data_provenance_version_variable_names_and_units_geolocation_information_see_list
             property: catalogue_provided_field
           - id: 'comment_thread'
