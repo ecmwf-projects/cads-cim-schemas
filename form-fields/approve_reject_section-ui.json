@@ -1,0 +1,6 @@
+{
+  "ui:field": "approveRejectField",
+  "approved": {
+    "ui:is_variable": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "title": "Approve/Reject",
+  "description": "Approve or Reject this QAR",
+  "comment": {
+    "type": "string",
+    "title": "Comment",
+    "description": "Approve/Reject comment",
+    "_comment": "Comment"
+  },
+  "approved": {
+    "type": "boolean",
+    "title": "Approve/Reject",
+    "description": "Approve or Reject",
+    "default": false
+  }
+}

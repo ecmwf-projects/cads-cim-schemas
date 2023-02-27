@@ -1,0 +1,13 @@
+{
+  "type": "string",
+  "enum": [
+    "reviewQarTask",
+    "dataProviderTask",
+    "qarManagerTask"
+  ],
+  "enumNames": [
+    "QAR Reviewer",
+    "Data Provider",
+    "QAR Manager"
+  ]
+}
