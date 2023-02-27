@@ -1,5 +1,3 @@
 {
-  "{{key}}": {
-    "ui:field": "reviewField"
-  }
+  "ui:field": "reviewField"
 }
