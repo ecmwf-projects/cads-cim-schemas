@@ -1,7 +1,7 @@
 datasets:
   - key: all
     catalogue_entries:
-      - key: "*"
+      - key: "all"
         groups:
           - All
     forms:
