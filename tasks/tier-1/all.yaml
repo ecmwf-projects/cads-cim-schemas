@@ -1,0 +1,58 @@
+tasks:
+  - key: evaluator
+    fields:
+      - id: forward
+  - key: reviewer
+    ui_schemas:
+      - property: description_field
+        type: review
+      - property: domain_field
+        type: review
+      - property: product_type_field
+        type: review
+      - property: temporal_coverage_field
+        type: review
+      - property: available_applications_field
+        type: review
+
+  - key: data-provider
+    ui_schemas:
+      - property: description_field
+        type: review
+      - property: domain_field
+        type: review
+      - property: product_type_field
+        type: review
+      - property: temporal_coverage_field
+        type: review
+      - property: available_applications_field
+        type: review
+  - key: qar-manager
+    ui_schemas:
+      - property: description_field
+        type: review
+      - property: domain_field
+        type: review
+      - property: product_type_field
+        type: review
+      - property: temporal_coverage_field
+        type: review
+      - property: available_applications_field
+        type: review
+    fields:
+      - id: approve_reject_section
+  - key: eqc-manager
+    ui_schemas:
+      - property: description_field
+        type: review
+      - property: domain_field
+        type: review
+      - property: product_type_field
+        type: review
+      - property: temporal_coverage_field
+        type: review
+      - property: available_applications_field
+        type: review
+    fields:
+      - id: approve_reject_section
+ 
