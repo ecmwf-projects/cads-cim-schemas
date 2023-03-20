@@ -9,12 +9,12 @@
           {
             "const": "atmosphere_composition",
             "title": "Atmosphere (composition)",
-            "url": "/tier1/agriculture.png"
+            "url": "/public/tier1/agriculture.png"
           },
           {
             "const": "land_biosphere",
             "title": "Land (biosphere)",
-            "url": "/tier1/energy.png"
+            "url": "/public/tier1/energy.png"
           }
         ]
       }

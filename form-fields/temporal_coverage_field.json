@@ -6,17 +6,17 @@
       {
         "const": "past",
         "title": "Past",
-        "url": "/tier1/agriculture.png"
+        "url": "/public/tier1/agriculture.png"
       },
       {
         "const": "present",
         "title": "Present",
-        "url": "/tier1/energy.png"
+        "url": "/public/tier1/energy.png"
       },
       {
         "const": "future",
         "title": "Future",
-        "url": "/tier1/ocean.png"
+        "url": "/public/tier1/ocean.png"
       }
     ]
   }
