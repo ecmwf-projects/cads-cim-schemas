@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "properties": {
+    "input": {
+      "title": "Available applications",
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "const": "agriculture",
+            "title": "Agriculture",
+            "url": "/tier1/agriculture.png"
+          },
+          {
+            "const": "energy",
+            "title": "Energy",
+            "url": "/tier1/energy.png"
+          },
+          {
+            "const": "ocean",
+            "title": "Ocean",
+            "url": "/tier1/ocean.png"
+          }
+        ]
+      }
+    }
+  }
+}

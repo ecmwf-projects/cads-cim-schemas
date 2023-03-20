@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "title": "Description",
+  "properties": {
+    "description_field": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "title": "Description",
+          "type": "string",
+          "description": "Description of the Tier-1 qar"
+        }
+      }
+    }
+  }
+}

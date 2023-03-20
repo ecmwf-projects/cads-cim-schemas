@@ -1,0 +1,15 @@
+datasets:
+  - key: all
+    catalogue_entries:
+      - key: "*"
+        groups:
+          - All
+    forms:
+      - fields:
+          - 'description_field'
+          - 'domain_field'
+          - 'product_type_field'
+          - 'temporal_coverage_field'
+          - 'available_applications_field'
+        groups:
+          - All

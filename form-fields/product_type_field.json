@@ -1,0 +1,23 @@
+{
+  "title": "Product Type",
+  "type": "string",
+  "items": {
+    "oneOf": [
+      {
+        "const": "climate_indices",
+        "title": "Climate indices",
+        "url": "/tier1/agriculture.png"
+      },
+      {
+        "const": "insitu_observations",
+        "title": "In-situ observations",
+        "url": "/tier1/energy.png"
+      },
+      {
+        "const": "reanalysis",
+        "title": "Reanalysis",
+        "url": "/tier1/ocean.png"
+      }
+    ]
+  }
+}
