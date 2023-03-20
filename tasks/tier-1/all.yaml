@@ -2,7 +2,7 @@ tasks:
   - key: evaluator
     fields:
       - id: forward
-  - key: reviewer
+  - key: review
     ui_schemas:
       - property: description_field
         type: review
