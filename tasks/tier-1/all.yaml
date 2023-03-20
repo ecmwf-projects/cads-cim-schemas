@@ -5,54 +5,54 @@ tasks:
   - key: review
     ui_schemas:
       - property: description_field
-        type: review
+        type: reviewer
       - property: domain_field
-        type: review
+        type: reviewer
       - property: product_type_field
-        type: review
+        type: reviewer
       - property: temporal_coverage_field
-        type: review
+        type: reviewer
       - property: available_applications_field
-        type: review
+        type: reviewer
 
   - key: data-provider
     ui_schemas:
       - property: description_field
-        type: review
+        type: reviewer
       - property: domain_field
-        type: review
+        type: reviewer
       - property: product_type_field
-        type: review
+        type: reviewer
       - property: temporal_coverage_field
-        type: review
+        type: reviewer
       - property: available_applications_field
-        type: review
+        type: reviewer
   - key: qar-manager
     ui_schemas:
       - property: description_field
-        type: review
+        type: reviewer
       - property: domain_field
-        type: review
+        type: reviewer
       - property: product_type_field
-        type: review
+        type: reviewer
       - property: temporal_coverage_field
-        type: review
+        type: reviewer
       - property: available_applications_field
-        type: review
+        type: reviewer
     fields:
       - id: approve_reject_section
   - key: eqc-manager
     ui_schemas:
       - property: description_field
-        type: review
+        type: reviewer
       - property: domain_field
-        type: review
+        type: reviewer
       - property: product_type_field
-        type: review
+        type: reviewer
       - property: temporal_coverage_field
-        type: review
+        type: reviewer
       - property: available_applications_field
-        type: review
+        type: reviewer
     fields:
       - id: approve_reject_section
  
