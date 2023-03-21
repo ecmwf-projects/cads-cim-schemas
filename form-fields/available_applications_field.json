@@ -1,0 +1,23 @@
+{
+  "title": "Available applications",
+  "type": "array",
+  "items": {
+    "anyOf": [
+      {
+        "const": "agriculture",
+        "title": "Agriculture",
+        "url": "/public/tier1/agriculture.png"
+      },
+      {
+        "const": "energy",
+        "title": "Energy",
+        "url": "/public/tier1/energy.png"
+      },
+      {
+        "const": "ocean",
+        "title": "Ocean",
+        "url": "/public/tier1/ocean.png"
+      }
+    ]
+  }
+}

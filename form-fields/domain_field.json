@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "input": {
+      "title": "Domain",
+      "type": "string",
+      "items": {
+        "oneOf": [
+          {
+            "const": "atmosphere_composition",
+            "title": "Atmosphere (composition)",
+            "url": "/public/tier1/agriculture.png"
+          },
+          {
+            "const": "land_biosphere",
+            "title": "Land (biosphere)",
+            "url": "/public/tier1/energy.png"
+          }
+        ]
+      }
+    }
+  }
+}

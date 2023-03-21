@@ -1,0 +1,5 @@
+{
+  "ui:field": "imageField",
+  "ui:multi": true,
+  "ui:disabled": true
+}

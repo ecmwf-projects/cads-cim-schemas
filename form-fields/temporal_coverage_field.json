@@ -1,0 +1,23 @@
+{
+  "title": "Temporal coverage",
+  "type": "string",
+  "items": {
+    "oneOf": [
+      {
+        "const": "past",
+        "title": "Past",
+        "url": "/public/tier1/agriculture.png"
+      },
+      {
+        "const": "present",
+        "title": "Present",
+        "url": "/public/tier1/energy.png"
+      },
+      {
+        "const": "future",
+        "title": "Future",
+        "url": "/public/tier1/ocean.png"
+      }
+    ]
+  }
+}
