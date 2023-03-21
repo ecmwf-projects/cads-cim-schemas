@@ -1,0 +1,11 @@
+datasets:
+  - key: all
+    catalogue_entries:
+      - key: "all"
+        groups:
+          - All
+    forms:
+      - fields:
+          - 'use_case_field'
+        groups:
+          - All

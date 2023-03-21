@@ -1,0 +1,15 @@
+{
+  "title": "Use cases",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string"
+      },
+      "comment": {
+        "type": "string"
+      }
+    }
+  }
+}

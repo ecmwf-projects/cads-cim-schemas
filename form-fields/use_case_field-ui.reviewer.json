@@ -1,0 +1,9 @@
+{
+  "title": {
+    "ui:disabled": true
+  },
+  "comment": {
+    "ui:field": "mdEditor",
+    "ui:disabled": true
+  }
+}

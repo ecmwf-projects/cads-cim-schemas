@@ -1,0 +1,26 @@
+tasks:
+  - key: evaluator
+    fields:
+      - id: forward
+  - key: review
+    ui_schemas:
+      - property: use_case_field
+        type: reviewer
+
+  - key: data-provider
+    ui_schemas:
+      - property: use_case_field
+        type: reviewer
+  - key: qar-manager
+    ui_schemas:
+      - property: use_case_field
+        type: reviewer
+    fields:
+      - id: approve_reject_section
+  - key: eqc-manager
+    ui_schemas:
+      - property: use_case_field
+        type: reviewer
+    fields:
+      - id: approve_reject_section
+ 
