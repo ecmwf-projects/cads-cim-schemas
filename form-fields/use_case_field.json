@@ -1,14 +1,34 @@
 {
-  "title": "Use cases",
   "type": "array",
+  "title": "Quality Assessment",
   "items": {
     "type": "object",
     "properties": {
-      "title": {
+      "uc_key": {
         "type": "string"
       },
-      "comment": {
-        "type": "string"
+      "uc_title": {
+        "type": "string",
+        "title": "Use case title",
+        "description": "Please add use case title"
+      },
+      "uc_comment": {
+        "type": "string",
+        "title": "Quality assessment comment",
+        "description": "Please add EQC assessment comments here, including links, references, etc..."
+      },
+      "uc_attachments": {
+        "type": "array",
+        "title": "Quality assessment attachments",
+        "items": {
+          "type": "string"
+        }
+      },
+      "comment_thread": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/comment_thread_message"
+        }
       }
     }
   }
