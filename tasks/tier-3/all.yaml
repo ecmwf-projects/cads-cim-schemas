@@ -11,7 +11,7 @@ tasks:
     ui_schemas:
       - property: use_case_field
         type: reviewer
-  - key: manager
+  - key: qar-manager
     ui_schemas:
       - property: use_case_field
         type: reviewer
