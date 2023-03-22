@@ -33,11 +33,7 @@ properties:
         id: 'available_applications_field'
 
 
-      - id: 'comment_thread'
-        key: comment_thread
-        property: comment_thread
-        always_visible: true
-  - name: Approve/Reject section
-    property: approve_reject_section
-    key: 'approve_reject_section'
-    id: 'approve_reject_section'
+  - id: 'comment_thread'
+    key: comment_thread
+    property: comment_thread
+    always_visible: true
