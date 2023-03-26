@@ -1,6 +1,8 @@
 {
   "type": "array",
   "items": {
-    "$ref": "#/definitions/comment_thread_message"
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {}
   }
 }
