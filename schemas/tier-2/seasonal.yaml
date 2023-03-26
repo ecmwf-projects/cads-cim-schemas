@@ -25,6 +25,10 @@ properties:
             name: Adequate version control and archiving policies must be in place.
             key: adequate_version_control_and_archiving_policies_must_be_in_place
             property: catalogue_provided_field
+      - id: 'comment_thread'
+        key: comment_thread
+        property: comment_thread
+        always_visible: true
   - name: Data record
     key: 'data_records'
     properties:

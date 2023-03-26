@@ -11,6 +11,10 @@ properties:
             name: All information provided with the dataset must be accurate and consistent.
             key: all_information_provided_with_the_dataset_must_be_accurate_and_consistent
             property: catalogue_provided_field
+          - id: 'comment_thread'
+            key: comment_thread
+            property: comment_thread
+            always_visible: true
       - name: Reliable Access
         key: 'reliable_access'
         properties:
@@ -18,6 +22,10 @@ properties:
             name: Access to all information must be open, free and reliable.
             key: access_to_all_information_must_be_open_free_and_reliable
             property: catalogue_provided_field
+          - id: 'comment_thread'
+            key: comment_thread
+            property: comment_thread
+            always_visible: true
       - name: Versioning and Archiving
         key: 'versioning_and_archiving'
         properties:
@@ -25,6 +33,10 @@ properties:
             name: Adequate version control and archiving policies must be in place.
             key: adequate_version_control_and_archiving_policies_must_be_in_place
             property: catalogue_provided_field
+          - id: 'comment_thread'
+            key: comment_thread
+            property: comment_thread
+            always_visible: true
   - name: Data record
     key: 'data_records'
     properties:
@@ -59,10 +71,6 @@ properties:
             name: CDRs and ICDRs are produced using methods and systems designed to minimize the effect of biases and other systematic errors in the input observations.
             key: cd_rs_and_icd_rs_are_produced_using_methods_and_systems_designed_to_minimize_the_effect_of_biases_and_other_systematic_errors_in_the_input_observations
             property: catalogue_provided_field
-          - id: 'comment_thread'
-            key: comment_thread
-            property: comment_thread
-            always_visible: true
       - name: Uncertainty
         key: 'uncertainty'
         properties:
@@ -70,10 +78,6 @@ properties:
             name: Estimates of uncertainty are provided for each ECV product in the dataset, in terms of accuracy and precision.
             key: estimates_of_uncertainty_are_provided_for_each_ecv_product_in_the_dataset_in_terms_of_accuracy_and_precision
             property: catalogue_provided_field
-          - id: 'comment_thread'
-            key: comment_thread
-            property: comment_thread
-            always_visible: true
       - name: Updates
         key: 'updates'
         properties:
@@ -85,10 +89,10 @@ properties:
             name: Availability of reprocessed CDRs must be announced 3 months in advance.
             key: availability_of_reprocessed_cd_rs_must_be_announced_3_months_in_advance
             property: catalogue_provided_field
-          - id: 'comment_thread'
-            key: comment_thread
-            property: comment_thread
-            always_visible: true
+      - id: 'comment_thread'
+        key: comment_thread
+        property: comment_thread
+        always_visible: true
   - name: Metadata
     key: 'metadata'
     properties:
