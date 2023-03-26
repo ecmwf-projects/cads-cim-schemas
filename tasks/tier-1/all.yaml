@@ -28,17 +28,6 @@ tasks:
       - property: available_applications_field
         type: reviewer
   - key: qar-manager
-    ui_schemas:
-      - property: description_field
-        type: reviewer
-      - property: domain_field
-        type: reviewer
-      - property: product_type_field
-        type: reviewer
-      - property: temporal_coverage_field
-        type: reviewer
-      - property: available_applications_field
-        type: reviewer
     fields:
       - id: approve_reject_section
   - key: eqc-manager
