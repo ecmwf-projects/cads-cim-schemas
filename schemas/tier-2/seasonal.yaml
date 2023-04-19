@@ -4,9 +4,17 @@ properties:
   - name: General
     key: 'general'
     properties:
+      - id: 'general-qc'
+        name: 'Quality check'
+        key: general_qc
+        property: quality_check
       - name: Accuracy and Consistency
         key: 'accuracy_and_consistency'
         properties:
+          - id: 'accuracy_and_consistency-qc'
+            name: 'Quality check'
+            key: accuracy_and_consistency_qc
+            property: quality_check
           - id: '1.1.1'
             name: All information provided with the dataset must be accurate and consistent.
             key: all_information_provided_with_the_dataset_must_be_accurate_and_consistent
@@ -14,6 +22,10 @@ properties:
       - name: Reliable Access
         key: 'reliable_access'
         properties:
+          - id: 'reliable_access-qc'
+            name: 'Quality check'
+            key: reliable_access_qc
+            property: quality_check
           - id: '1.2.1'
             name: Access to all information must be open, free and reliable.
             key: access_to_all_information_must_be_open_free_and_reliable
@@ -21,6 +33,10 @@ properties:
       - name: Versioning and Archiving
         key: 'versioning_and_archiving'
         properties:
+          - id: 'versioning_and_archiving-qc'
+            name: 'Quality check'
+            key: versioning_and_archiving_qc
+            property: quality_check
           - id: '1.3.1'
             name: Adequate version control and archiving policies must be in place.
             key: adequate_version_control_and_archiving_policies_must_be_in_place
@@ -32,9 +48,17 @@ properties:
   - name: Data record
     key: 'data_records'
     properties:
+      - id: 'data_records-qc'
+        name: 'Quality check'
+        key: data_records_qc
+        property: quality_check
       - name: Consistency
         key: 'consistency'
         properties:
+          - id: 'consistency-qc'
+            name: 'Quality check'
+            key: consistency_qc
+            property: quality_check
           - id: '2.1.1'
             name: Data records include ensembles of real-time global seasonal forecasts and associated re-forecasts produced by multiple originating centres.
             key: data_records_include_ensembles_of_real_time_global_seasonal_forecasts_and_associated_re_forecasts_produced_by_multiple_originating_centres
@@ -98,6 +122,10 @@ properties:
       - name: Uncertainty
         key: 'uncertainty'
         properties:
+          - id: 'uncertainty-qc'
+            name: 'Quality check'
+            key: uncertainty_qc
+            property: quality_check
           - id: '2.2.1'
             name: Seasonal forecast data comprise an ensemble of equally likely forecasts that can be used to estimate uncertainties.
             key: seasonal_forecast_data_comprise_an_ensemble_of_equally_likely_forecasts_that_can_be_used_to_estimate_uncertainties
@@ -113,6 +141,10 @@ properties:
       - name: Updates
         key: 'updates'
         properties:
+          - id: 'updates-qc'
+            name: 'Quality check'
+            key: updates_qc
+            property: quality_check
           - id: '2.3.1'
             name: Updated real-time forecast and re-forecast data are available on the CDS by 12UTC on the 13th day of each month.
             key: updated_real_time_forecast_and_re_forecast_data_are_available_on_the_cds_by_12_utc_on_the_13_th_day_of_each_month
@@ -128,9 +160,17 @@ properties:
   - name: Metadata
     key: 'metadata'
     properties:
+      - id: 'metadata-qc'
+        name: 'Quality check'
+        key: metadata_qc
+        property: quality_check
       - name: Discovery and Use
         key: 'discovery_and_use'
         properties:
+          - id: 'discovery_and_use-qc'
+            name: 'Quality check'
+            key: discovery_and_use_qc
+            property: quality_check
           - id: '3.1.1'
             name: 'Metadata include: Data provenance; version; variable names and units; geolocation information; see list.'
             key: metadata_include_data_provenance_version_variable_names_and_units_geolocation_information_see_list
@@ -142,6 +182,10 @@ properties:
       - name: Interoperability
         key: 'interoperability'
         properties:
+          - id: 'interoperability-qc'
+            name: 'Quality check'
+            key: interoperability_qc
+            property: quality_check
           - id: '3.2.1'
             name: Metadata implementation is consistent with the EU INSPIRE directive.
             key: metadata_implementation_is_consistent_with_the_eu_inspire_directive
@@ -165,9 +209,17 @@ properties:
   - name: Documentation
     key: 'documentation'
     properties:
+      - id: 'documentation-qc'
+        name: 'Quality check'
+        key: documentation_qc
+        property: quality_check
       - name: Content
         key: 'content'
         properties:
+          - id: 'content-qc'
+            name: 'Quality check'
+            key: content_qc
+            property: quality_check
           - id: '4.1.1'
             name: Documentation must include a general overview of the data records and their primary use.
             key: documentation_must_include_a_general_overview_of_the_data_records_and_their_primary_use
@@ -187,6 +239,10 @@ properties:
       - name: Scientific Basis
         key: 'scientific_basis'
         properties:
+          - id: 'scientific_basis-qc'
+            name: 'Quality check'
+            key: scientific_basis_qc
+            property: quality_check
           - id: '4.2.1'
             name: The scientific basis for the seasonal forecast systems used to produce the forecast and re-forecast data must be documented in peer-reviewed publications.
             key: the_scientific_basis_for_the_seasonal_forecast_systems_used_to_produce_the_forecast_and_re_forecast_data_must_be_documented_in_peer_reviewed_publications
@@ -214,6 +270,10 @@ properties:
       - name: Quality Control
         key: quality_control
         properties:
+          - id: 'quality_control-qc'
+            name: 'Quality check'
+            key: quality_control_qc
+            property: quality_check
           - id: '4.3.1'
             name: Documentation must include descriptions and results of methods, procedures and/or systems that have been implemented to mitigate potential issues in production and post-processing that can affect data quality.
             key: documentation_must_include_descriptions_and_results_of_methods_procedures_and_or_systems_that_have_been_implemented_to_mitigate_potential_issues_in_production_and_post_processing_that_can_affect_data_quality
@@ -233,6 +293,10 @@ properties:
       - name: User Guidance
         key: 'user_guidance'
         properties:
+          - id: 'user_guidance-qc'
+            name: 'Quality check'
+            key: user_guidance_qc
+            property: quality_check
           - id: '4.4.1'
             name: User guidance must be provided on essential characteristics of seasonal forecast data, including uncertainties and how they can be quantified.
             key: user_guidance_must_be_provided_on_essential_characteristics_of_seasonal_forecast_data_including_uncertainties_and_how_they_can_be_quantified
