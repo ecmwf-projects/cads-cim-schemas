@@ -127,21 +127,21 @@ datasets:
           - All
       # Quality checks
       - fields:
-          - 'general-qc'
-          - 'accuracy_and_consistency-qc'
-          - 'reliable_access-qc'
-          - 'versioning_and_archiving-qc'
-          - 'data_records-qc'
-          - 'consistency-qc'
-          - 'uncertainty-qc'
-          - 'updates-qc'
-          - 'metadata-qc'
-          - 'discovery_and_use-qc'
-          - 'interoperability-qc'
-          - 'documentation-qc'
-          - 'content-qc'
-          - 'scientific_basis-qc'
-          - 'quality_control-qc'
-          - 'user_guidance-qc'
+          - "general-qc"
+          - "accuracy_and_consistency-qc"
+          - "reliable_access-qc"
+          - "versioning_and_archiving-qc"
+          - "data_records-qc"
+          - "consistency-qc"
+          - "uncertainty-qc"
+          - "updates-qc"
+          - "metadata-qc"
+          - "discovery_and_use-qc"
+          - "interoperability-qc"
+          - "documentation-qc"
+          - "content-qc"
+          - "scientific_basis-qc"
+          - "quality_control-qc"
+          - "user_guidance-qc"
         groups:
           - All

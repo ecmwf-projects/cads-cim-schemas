@@ -19,4 +19,3 @@ tasks:
         type: review
     fields:
       - id: approve_reject_section
- 
