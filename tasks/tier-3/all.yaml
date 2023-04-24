@@ -1,16 +1,16 @@
 tasks:
   - key: upload-jupyter
     fields:
-      - property: review-jupyter
+      - property: review_jupyter
     ui_schemas:
       - property: use_case_field
         type: reviewer
 
-  - key: review-jupyter
+  - key: review_jupyter
     fields:
-      - property: review-jupyter
+      - property: review_jupyter
     ui_schemas:
-      - property: review-jupyter
+      - property: review_jupyter
         type: reviewer
       - property: use_case_field
         type: reviewer
