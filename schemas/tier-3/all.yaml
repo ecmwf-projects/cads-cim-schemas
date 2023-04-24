@@ -6,3 +6,4 @@ properties:
     key: comment_thread
     property: comment_thread
     always_visible: true
+    weight: 9999  # Always show at the bottom
