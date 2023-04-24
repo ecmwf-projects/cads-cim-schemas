@@ -1,15 +1,6 @@
 name: Quality Assessment
 key: all
 properties:
-  - name: Use cases
-    key: 'use_case_field'
-    property: use_case_field
-    id: 'use_case_field'
-
-  - name: Review Jupyter Notebook
-    key: 'review_jupyter'
-    property: review_jupyter
-    id: 'review_jupyter'
 
   - id: 'comment_thread'
     key: comment_thread

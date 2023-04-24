@@ -2,39 +2,40 @@ tasks:
   - key: upload-jupyter
     fields:
       - id: review_jupyter
-    ui_schemas:
-      - id: use_case_field
-        type: reviewer
 
   - key: review_jupyter
     fields:
-      - property: review_jupyter
+      - id: review_jupyter
     ui_schemas:
       - property: review_jupyter
-        type: reviewer
-      - property: use_case_field
         type: reviewer
 
   - key: evaluator
     fields:
+      - id: use_case_field
       - id: forward
 
   - key: review
+    fields:
+      - id: use_case_field
     ui_schemas:
       - property: use_case_field
         type: reviewer
 
   - key: data-provider
+    fields:
+      - id: use_case_field
     ui_schemas:
       - property: use_case_field
         type: reviewer
   - key: qar-manager
     fields:
+      - id: use_case_field
       - id: approve_reject_section
   - key: eqc-manager
     ui_schemas:
       - property: use_case_field
         type: reviewer
     fields:
+      - id: use_case_field
       - id: approve_reject_section
- 
