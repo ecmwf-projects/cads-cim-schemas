@@ -3,7 +3,7 @@ tasks:
     fields:
       - id: review_jupyter
 
-  - key: review_jupyter
+  - key: review-jupyter
     fields:
       - id: review_jupyter
     ui_schemas:
