@@ -6,6 +6,7 @@ tasks:
   - key: review-jupyter
     fields:
       - id: review_jupyter
+      - id: approve_reject_section
     ui_schemas:
       - property: review_jupyter
         type: reviewer
