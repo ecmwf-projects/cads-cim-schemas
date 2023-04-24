@@ -1,4 +1,4 @@
 {
   "ui:field": "jupyterEditor",
-  "ui:disabled": true
+  "ui:readOnly": true
 }
