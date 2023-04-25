@@ -1,3 +1,14 @@
 {
-  "type": "string"
+  "type": "object",
+  "required": ["quality_check", "data_provider_input"],
+  "properties": {
+    "data_provider_input": {
+      "type": "string",
+      "title": "{{title}}",
+      "description": "{{description}}"
+    },
+    "quality_check": {
+      "type": "string"
+    }
+  }
 }
