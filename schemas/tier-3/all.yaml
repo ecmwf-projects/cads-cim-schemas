@@ -1,12 +1,9 @@
 name: Quality Assessment
 key: all
 properties:
-  - name: Use cases
-    key: 'use_case_field'
-    property: use_case_field
-    id: 'use_case_field'
 
   - id: 'comment_thread'
     key: comment_thread
     property: comment_thread
     always_visible: true
+    weight: 9999  # Always show at the bottom

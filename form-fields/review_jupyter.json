@@ -1,0 +1,10 @@
+{
+  "title": "Jupyter notebook",
+  "type": "object",
+  "description": "Jupyter notebook file to review",
+  "items": {
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {}
+  }
+}
