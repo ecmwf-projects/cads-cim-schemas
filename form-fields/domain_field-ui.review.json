@@ -1,4 +1,4 @@
 {
   "ui:field": "imageField",
-  "ui:disabled": true
+  "ui:readOnly": true
 }
