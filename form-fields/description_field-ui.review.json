@@ -1,4 +1,4 @@
 {
   "ui:field": "mdEditor",
-  "ui:disabled": true
+  "ui:readOnly": true
 }
