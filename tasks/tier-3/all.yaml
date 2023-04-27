@@ -13,6 +13,11 @@ tasks:
       - property: review_jupyter
         type: review
 
+  - key: evaluator-start
+    fields:
+      - id: use_case_field
+      - id: forward
+
   - key: evaluator
     fields:
       - id: use_case_field
