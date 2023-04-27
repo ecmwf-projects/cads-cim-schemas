@@ -16,16 +16,19 @@ tasks:
   - key: evaluator-start
     fields:
       - id: use_case_field
+        weight: -1  # Always show at the top
       - id: forward
 
   - key: evaluator
     fields:
       - id: use_case_field
+        weight: -1  # Always show at the top
       - id: forward
 
   - key: review
     fields:
       - id: use_case_field
+        weight: -1  # Always show at the top
     ui_schemas:
       - property: use_case_field
         type: review
@@ -33,17 +36,20 @@ tasks:
   - key: data-provider
     fields:
       - id: use_case_field
+        weight: -1  # Always show at the top
     ui_schemas:
       - property: use_case_field
         type: review
   - key: qar-manager
     fields:
       - id: use_case_field
+        weight: -1  # Always show at the top
       - id: approve_reject_section
   - key: eqc-manager
+    fields:
+      - id: use_case_field
+        weight: -1  # Always show at the top
+      - id: approve_reject_section
     ui_schemas:
       - property: use_case_field
         type: review
-    fields:
-      - id: use_case_field
-      - id: approve_reject_section
