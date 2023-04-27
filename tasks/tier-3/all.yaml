@@ -25,7 +25,7 @@ tasks:
         weight: -1  # Always show at the top
       - id: forward
 
-  - key: review
+  - key: reviewer
     fields:
       - id: use_case_field
         weight: -1  # Always show at the top
