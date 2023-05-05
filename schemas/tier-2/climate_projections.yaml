@@ -6,6 +6,7 @@ properties:
     properties:
       - id: "general-qc"
         name: "Quality check"
+        description: "Quality check description"
         key: general_qc
         property: quality_check
       - name: Accuracy and Consistency
@@ -17,6 +18,7 @@ properties:
             property: quality_check
           - id: "1.1.1"
             name: All information provided with the dataset must be accurate and consistent.
+            description: "Check the consistency and accuracy of the available information on CADS overview and documentation with the dataset(s) of the catalogue."
             key: all_information_provided_with_the_dataset_must_be_accurate_and_consistent
             property: catalogue_provided_field
       - name: Reliable Access
@@ -28,6 +30,7 @@ properties:
             property: quality_check
           - id: "1.2.1"
             name: Access to all information must be open, free and reliable.
+            description: "Check if all catalogue dataset is publicly available and accessible as documented on CADS"
             key: access_to_all_information_must_be_open_free_and_reliable
             property: catalogue_provided_field
       - name: Versioning and Archiving
@@ -39,6 +42,7 @@ properties:
             property: quality_check
           - id: "1.3.1"
             name: Adequate version control and archiving policies must be in place.
+            description: Check if all catalogue dataset versions are available and archived as documented on CADS, and archiving policies.
             key: adequate_version_control_and_archiving_policies_must_be_in_place
             property: catalogue_provided_field
       - id: "comment_thread"
