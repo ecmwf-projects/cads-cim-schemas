@@ -15,10 +15,12 @@ properties:
             name: "Quality check"
             key: accuracy_and_consistency_qc
             property: quality_check
+            description: All information provided with the dataset must be accurate and consistent.
           - id: "1.1.1"
             name: All information provided with the dataset must be accurate and consistent.
             key: all_information_provided_with_the_dataset_must_be_accurate_and_consistent
             property: catalogue_provided_field
+            description: From the view point of a new user check if everything on the landing page is consistent, accurate, that download options work and the documentation is populated.
       - name: Reliable Access
         key: "reliable_access"
         properties:
@@ -26,10 +28,12 @@ properties:
             name: "Quality check"
             key: reliable_access_qc
             property: quality_check
+            description: Access to all information must be open, free and reliable.
           - id: "1.2.1"
             name: Access to all information must be open, free and reliable.
             key: access_to_all_information_must_be_open_free_and_reliable
             property: catalogue_provided_field
+            description: Check if all catalogue dataset is clearly structured from the view point of users, publicly available and accessible as documented on CADS.
       - name: Versioning and Archiving
         key: "versioning_and_archiving"
         properties:
@@ -37,10 +41,12 @@ properties:
             name: "Quality check"
             key: versioning_and_archiving_qc
             property: quality_check
+            description: Adequate version control and archiving policies must be in place.
           - id: "1.3.1"
             name: Adequate version control and archiving policies must be in place.
             key: adequate_version_control_and_archiving_policies_must_be_in_place
             property: catalogue_provided_field
+            description: Check if all catalogue dataset versions are available as documented on CADS.
       - id: "comment_thread"
         key: comment_thread
         property: comment_thread
@@ -59,62 +65,77 @@ properties:
             name: "Quality check"
             key: consistency_qc
             property: quality_check
+            description: The data must be complete and internally consistent.
           - id: "2.1.1"
             name: Data records include ensembles of real-time global seasonal forecasts and associated re-forecasts produced by multiple originating centres.
             key: data_records_include_ensembles_of_real_time_global_seasonal_forecasts_and_associated_re_forecasts_produced_by_multiple_originating_centres
             property: catalogue_provided_field
+            description: Please check the availability, completeness, and consistency of all ensemble members (for both real-time forecast and reforecast record) as documented and produced by multiple originating centres.
           - id: "2.1.2"
             name: Data records include ensembles of real-time global forecast anomalies that have been post-processed for bias adjustment.
             key: data_records_include_ensembles_of_real_time_global_forecast_anomalies_that_have_been_post_processed_for_bias_adjustment
             property: catalogue_provided_field
+            description: Please check the availability, completeness, and consistency of all ensemble members for real-time forecast anomalies as documented and produced by multiple originating centres.
           - id: "2.1.3"
             name: Ensemble means and all individual ensemble members are available from multiple originating centres.
             key: ensemble_means_and_all_individual_ensemble_members_are_available_from_multiple_originating_centres
             property: catalogue_provided_field
+            description: Please check the availability of ensemble means and individual members in real-time forecast anomalies as documented and produced by multiple originating centres.
           - id: "2.1.4"
             name: Forecasts and associated re-forecasts are generated using identical system versions and consistent initial conditions.
             key: forecasts_and_associated_re_forecasts_are_generated_using_identical_system_versions_and_consistent_initial_conditions
             property: catalogue_provided_field
+            description: Please check if the forecasts and associated re-forecasts are generated using identical system versions and consistent initial conditions. 
           - id: "2.1.5"
             name: Forecasts and re-forecasts cover at least 6 calendar months from their nominal start date.
             key: forecasts_and_re_forecasts_cover_at_least_6_calendar_months_from_their_nominal_start_date
             property: catalogue_provided_field
+            description: Please check if the real-time forecast record and re-forecast record cover at least 6 calendar months from their nominal start date.
           - id: "2.1.6"
             name: Starting dates for re-forecasts cover the period 1993-2016 at least.
             key: starting_dates_for_re_forecasts_cover_the_period_1993_2016_at_least
             property: catalogue_provided_field
+            description: "For daily/sub-daily and monthly catalogs: please check if the re-forecast record cover at least the documented temporal coverage ‘1993-2016’".
           - id: "2.1.7"
             name: Forecast anomalies cover at least 6 calendar months from their nominal start date.
             key: forecast_anomalies_cover_at_least_6_calendar_months_from_their_nominal_start_date
             property: catalogue_provided_field
+            description: Please check if the real-time forecast record cover at least 6 calendar months from their nominal start date.
           - id: "2.1.8"
             name: Forecast anomalies are available at monthly resolution.
             key: forecast_anomalies_are_available_at_monthly_resolution
             property: catalogue_provided_field
+            description: Please check if the time resolution of anomalies is monthly.
           - id: "2.1.9"
             name: Forecast and re-forecast data are available for all listed variables as documented.
             key: forecast_and_re_forecast_data_are_available_for_all_listed_variables_as_documented
             property: catalogue_provided_field
+            description: 'Check availability for this parameter list in the documentation: https://confluence.ecmwf.int/display/CKB/Detailed+list+of+parameters'
           - id: "2.1.10"
             name: Forecast and re-forecast data are available on regular latitude-longitude grids as documented.
             key: forecast_and_re_forecast_data_are_available_on_regular_latitude_longitude_grids_as_documented
             property: catalogue_provided_field
+            description: Check documentation for list of grid resolutions for the CADS data for the different forecast systems.
           - id: "2.1.11"
             name: Forecast and re-forecast data are available on 11 pressure levels spanning 925 hPa to 10 hPa.
             key: forecast_and_re_forecast_data_are_available_on_11_pressure_levels_spanning_925_h_pa_to_10_h_pa
             property: catalogue_provided_field
+            description: 'Check if availability of pressure levels equals specification in the documentation: https://confluence.ecmwf.int/display/CKB/Detailed+list+of+parameters'
           - id: "2.1.12"
             name: Forecast data are available at daily or sub-daily resolution as documented.
             key: forecast_data_are_available_at_daily_or_sub_daily_resolution_as_documented
             property: catalogue_provided_field
+            description: "Check if availability of parameters equals specification in the documentation: https://confluence.ecmwf.int/display/CKB/Detailed+list+of+parameters"
           - id: "2.1.13"
             name: Monthly statistics are consistent with the corresponding daily/sub-daily forecast data.
             key: monthly_statistics_are_consistent_with_the_corresponding_daily_sub_daily_forecast_data
             property: catalogue_provided_field
+            description: A script to check this requirement on random samples (e.g., a selection of point and time steps) will be made.
           - id: "2.1.14"
             name: Real-time monthly anomalies are consistent with the corresponding daily/sub-daily forecast data.
             key: real_time_monthly_anomalies_are_consistent_with_the_corresponding_daily_sub_daily_forecast_data
             property: catalogue_provided_field
+            description: A script to check this requirement on random samples (e.g., a selection of point and time steps) will be made.
           - id: "comment_thread"
             key: comment_thread
             property: comment_thread
@@ -126,14 +147,17 @@ properties:
             name: "Quality check"
             key: uncertainty_qc
             property: quality_check
+            description: The data must include information about uncertainties.
           - id: "2.2.1"
             name: Seasonal forecast data comprise an ensemble of equally likely forecasts that can be used to estimate uncertainties.
             key: seasonal_forecast_data_comprise_an_ensemble_of_equally_likely_forecasts_that_can_be_used_to_estimate_uncertainties
             property: catalogue_provided_field
+            description: Please check if an ensemble of forecasts exists and that the documentation explain or provide examples on how the ensemble can be used to estimate uncertainty.
           - id: "2.2.2"
             name: Re-forecast data comprise an ensemble of equally likely hindcasts that can be used to estimate uncertainties.
             key: re_forecast_data_comprise_an_ensemble_of_equally_likely_hindcasts_that_can_be_used_to_estimate_uncertainties
             property: catalogue_provided_field
+            description: Please check if an ensemble of forecasts exists and that the documentation explain or provide examples on how the ensemble can be used to estimate uncertainty.
           - id: "comment_thread"
             key: comment_thread
             property: comment_thread
@@ -145,14 +169,17 @@ properties:
             name: "Quality check"
             key: updates_qc
             property: quality_check
+            description: Updates of the data records must be provided on a predictable schedule.
           - id: "2.3.1"
             name: Updated real-time forecast and re-forecast data are available on the CDS by 12UTC on the 13th day of each month.
             key: updated_real_time_forecast_and_re_forecast_data_are_available_on_the_cds_by_12_utc_on_the_13_th_day_of_each_month
             property: catalogue_provided_field
+            description: Please check if information about regularly update frequency is as documented.
           - id: "2.3.2"
             name: Operational version changes in the originating seasonal forecast systems are announced at least one month in advance.
             key: operational_version_changes_in_the_originating_seasonal_forecast_systems_are_announced_at_least_one_month_in_advance
             property: catalogue_provided_field
+            description: Please check if the previous update of the system was announced at least one month in advance.
           - id: "comment_thread"
             key: comment_thread
             property: comment_thread
@@ -171,10 +198,12 @@ properties:
             name: "Quality check"
             key: discovery_and_use_qc
             property: quality_check
+            description: Metadata must include all necessary information for discovery and proper use of the data records.
           - id: "3.1.1"
             name: "Metadata include: Data provenance; version; variable names and units; geolocation information; see list."
             key: metadata_include_data_provenance_version_variable_names_and_units_geolocation_information_see_list
             property: catalogue_provided_field
+            description: "List of metadata: Check the metadata content of the real-time forecast and re-forecast data contains all relevant information, such as, originating centre; system version; variable names and units, etc. Check both grib and netcdf format."
           - id: "comment_thread"
             key: comment_thread
             property: comment_thread
@@ -186,22 +215,27 @@ properties:
             name: "Quality check"
             key: interoperability_qc
             property: quality_check
+            description: Metadata must comply with relevant international standards. 
           - id: "3.2.1"
             name: Metadata implementation is consistent with the EU INSPIRE directive.
             key: metadata_implementation_is_consistent_with_the_eu_inspire_directive
             property: catalogue_provided_field
+            description: "Check consistency with https://inspire.ec.europa.eu/metadata/6541"
           - id: "3.2.2"
             name: Metadata comply with applicable NetCDF CF conventions.
             key: metadata_comply_with_applicable_net_cdf_cf_conventions
             property: catalogue_provided_field
+            description: "Check compliance with https://cfconventions.org/"
           - id: "3.2.3"
             name: Data and metadata are available in the GRIB1 format.
             key: data_and_metadata_are_available_in_the_grib_1_format
             property: catalogue_provided_field
+            description: "Please check if the data format of the real-time forecast and re-forecast is consistent with the documented format ’GRIB1’ or not."
           - id: "3.2.4"
             name: A DOI is associated with the dataset.
             key: a_doi_is_associated_with_the_dataset
             property: catalogue_provided_field
+            description: Please check the existence of DOI for each seasonal forecast catalogue entry.
           - id: "comment_thread"
             key: comment_thread
             property: comment_thread
@@ -220,18 +254,22 @@ properties:
             name: "Quality check"
             key: content_qc
             property: quality_check
+            description: The content of data records must be fully documented.
           - id: "4.1.1"
             name: Documentation must include a general overview of the data records and their primary use.
             key: documentation_must_include_a_general_overview_of_the_data_records_and_their_primary_use
             property: catalogue_provided_field
+            description: Please check if the available documentation on CADS sufficiently provides a general description of the seasonal forecast multi system product and their primary use.
           - id: "4.1.2"
             name: Documentation must include a detailed description of all available variables in each data record, their spatial coverage and resolution, temporal coverage and resolution, forecast lead times, ensemble properties, data update frequencies, etc.
             key: documentation_must_include_a_detailed_description_of_all_available_variables_in_each_data_record_their_spatial_coverage_and_resolution_temporal_coverage_and_resolution_forecast_lead_times_ensemble_properties_data_update_frequencies_etc
             property: catalogue_provided_field
+            description: Please check if the available documentation on CADS provides detailed description of all available variables in each seasonal forecast catalogues, including the temporal/spatial/vertical resolution and coverage, forecast lead times, ensemble properties, data update frequencies, etc. 
           - id: "4.1.3"
             name: Documentation must refer to data producers, data licenses, digital object identifiers (doi), key references.
             key: documentation_must_refer_to_data_producers_data_licenses_digital_object_identifiers_doi_key_references
             property: catalogue_provided_field
+            description: Please check if the available documentation of the seasonal forecasts on CADS   contains all required information about the data producers, originating centre, system versions, data licenses, digital object identifiers (doi), key references. 
           - id: "comment_thread"
             key: comment_thread
             property: comment_thread
@@ -243,26 +281,32 @@ properties:
             name: "Quality check"
             key: scientific_basis_qc
             property: quality_check
+            description: The scientific methodology used to produce the data must be fully documented.
           - id: "4.2.1"
             name: The scientific basis for the seasonal forecast systems used to produce the forecast and re-forecast data must be documented in peer-reviewed publications.
             key: the_scientific_basis_for_the_seasonal_forecast_systems_used_to_produce_the_forecast_and_re_forecast_data_must_be_documented_in_peer_reviewed_publications
             property: catalogue_provided_field
+            description: Please check if the documentation provide links or references to peer-reviewed publication relevant for the latest forecast system version.
           - id: "4.2.2"
             name: The technical implementation of each seasonal forecast system used to produce forecast and re-forecast data must be documented.
             key: the_technical_implementation_of_each_seasonal_forecast_system_used_to_produce_forecast_and_re_forecast_data_must_be_documented
             property: catalogue_provided_field
+            description: Please check if the technical implementation of each seasonal forecast system used to produce forecast and re-forecast data is available, or links exist on the CADS documentation or not.
           - id: "4.2.3"
             name: The post-processing steps implemented to transform original model output into C3S data records must be documented.
             key: the_post_processing_steps_implemented_to_transform_original_model_output_into_c_3_s_data_records_must_be_documented
             property: catalogue_provided_field
+            description: "Please check if the post-processing steps implemented in order to transform original model output into C3S data records are available and documented or not. Post-processing means: 1. the spatial interpolation done by data producers 2. C3S reformate the dataset to be GRIB1 format)"
           - id: "4.2.4"
             name: The post-processing steps implemented to derive monthly statistics from model output must be documented.
             key: the_post_processing_steps_implemented_to_derive_monthly_statistics_from_model_output_must_be_documented
             property: catalogue_provided_field
+            description: Please check if the post-processing steps to transform the daily and subdaily data into monthly statistics is documented on CADS
           - id: "4.2.5"
             name: The post-processing steps implemented to derive monthly anomalies from model output must be documented.
             key: the_post_processing_steps_implemented_to_derive_monthly_anomalies_from_model_output_must_be_documented
             property: catalogue_provided_field
+            description: Please check if the post-processing steps to derive monthly anomalies is documented on CADS
           - id: "comment_thread"
             key: comment_thread
             property: comment_thread
@@ -274,18 +318,22 @@ properties:
             name: "Quality check"
             key: quality_control_qc
             property: quality_check
+            description: Quality control and validation activities must be fully documented.
           - id: "4.3.1"
             name: Documentation must include descriptions and results of methods, procedures and/or systems that have been implemented to mitigate potential issues in production and post-processing that can affect data quality.
             key: documentation_must_include_descriptions_and_results_of_methods_procedures_and_or_systems_that_have_been_implemented_to_mitigate_potential_issues_in_production_and_post_processing_that_can_affect_data_quality
             property: catalogue_provided_field
+            description: Please check if the results of methods, procedures and/or systems that have been implemented to mitigate potential issues in production and post-processing that can affect data quality is documented and publicly available.
           - id: "4.3.2"
             name: Documentation must include results of evaluations by the originating centres and/or third parties of key performance indicators for their seasonal forecast systems.
             key: documentation_must_include_results_of_evaluations_by_the_originating_centres_and_or_third_parties_of_key_performance_indicators_for_their_seasonal_forecast_systems
             property: catalogue_provided_field
+            description: Please check if the available information on CADS provides a summary of key performances of the forecast systems including links or references to further information.
           - id: "4.3.3"
             name: Implementation of new system versions must be provided with a description of significant system changes as well as an assessment of changes in key performance indicators.
             key: implementation_of_new_system_versions_must_be_provided_with_a_description_of_significant_system_changes_as_well_as_an_assessment_of_changes_in_key_performance_indicators
             property: catalogue_provided_field
+            description: Please check if the available documentation on CADS includes descriptions of the new system with the significant system changes indicated and the assessment performed. Relevant information should be in announcement and on the documentation of each specific forecast system.
           - id: "comment_thread"
             key: comment_thread
             property: comment_thread
@@ -297,22 +345,27 @@ properties:
             name: "Quality check"
             key: user_guidance_qc
             property: quality_check
+            description: Detailed information must be available to assist users in using the data.
           - id: "4.4.1"
             name: User guidance must be provided on essential characteristics of seasonal forecast data, including uncertainties and how they can be quantified.
             key: user_guidance_must_be_provided_on_essential_characteristics_of_seasonal_forecast_data_including_uncertainties_and_how_they_can_be_quantified
             property: catalogue_provided_field
+            description: Please check if documentation address the essential characteristics of the seasonal forecast systems, including uncertainties and how they can be quantified.
           - id: "4.4.2"
             name: A description of known issues with the data must be available.
             key: a_description_of_known_issues_with_the_data_must_be_available
             property: catalogue_provided_field
+            description: Please check if a list of known issues of the seasonal forecast product are publicly available and well described on CADS.
           - id: "4.4.3"
             name: A list of frequently asked questions for seasonal forecast data must be available.
             key: a_list_of_frequently_asked_questions_for_seasonal_forecast_data_must_be_available
             property: catalogue_provided_field
+            description: Please check if there is a list of frequently asked questions available for seasonal forecast on CADS.
           - id: "4.4.4"
             name: Examples of simple applications of seasonal forecast data must be available.
             key: examples_of_simple_applications_of_seasonal_forecast_data_must_be_available
             property: catalogue_provided_field
+            description: Please check if examples for simple applications of seasonal forecast data must be available.
           - id: "comment_thread"
             key: comment_thread
             property: comment_thread
