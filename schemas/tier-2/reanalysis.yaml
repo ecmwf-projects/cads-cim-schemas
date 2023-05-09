@@ -15,6 +15,7 @@ properties:
             name: "Quality check"
             key: accuracy_and_consistency_qc
             property: quality_check
+            description: All information provided with the dataset must be accurate and consistent.
           - id: "1.1.1"
             name: All information provided with the dataset must be accurate and consistent.
             description: Check the consistency and accuracy of the available information on CADS overview tap with the dataset(s) of the catalogue.
@@ -27,6 +28,7 @@ properties:
             name: "Quality check"
             key: reliable_access_qc
             property: quality_check
+            description: Access to all information must be open, free and reliable.
           - id: "1.2.1"
             name: Access to all information must be open, free and reliable.
             description: Check if all dataset(s) of the catalogue is publicly available and accessible as documented on CADS
@@ -39,6 +41,7 @@ properties:
             name: "Quality check"
             key: versioning_and_archiving_qc
             property: quality_check
+            description: Adequate version control and archiving policies must be in place.
           - id: "1.3.1"
             name: Adequate version control and archiving policies must be in place.
             description: Check if dataset versions are available on the catalogue as documented on CADS, and archiving policies, etc.
@@ -62,6 +65,7 @@ properties:
             name: "Quality check"
             key: consistency_qc
             property: quality_check
+            description: The data must be complete and internally consistent.
           - id: "2.1.1"
             name: Data records are derived from the output of a (regional or global) model-based climate reanalysis system.
             description: Please check the documentation and assess if the data record provided by the dataset are derived from the output of a (regional or global) model-based climate reanalysis system, or not.
@@ -103,6 +107,7 @@ properties:
             name: "Quality check"
             key: uncertainty_qc
             property: quality_check
+            description: The data must include information about uncertainties.
           - id: "2.2.1"
             name: The dataset contains information about uncertainties for key weather parameters and for any ECV products (see here) included in the data records.
             description: Please check if the uncertainty quantification is provided with the dataset in CADS for key weather parameters and for any ECV products or not. List of ECVs is [here](https://library.wmo.int/doc_num.php?explnum_id=11318)
@@ -119,6 +124,7 @@ properties:
             name: "Quality check"
             key: updates_qc
             property: quality_check
+            description: Updates of the data records must be provided on a predictable schedule.
           - id: "2.3.1"
             name: Forward-in-time extensions of reanalysis data are updated on a fixed schedule.
             description: Please check the if there is a regular/fixed schedule for the data record of the dataset or not.
@@ -147,6 +153,7 @@ properties:
             name: "Quality check"
             key: discovery_and_use_qc
             property: quality_check
+            description: Metadata must include all necessary information for discovery and proper use of the data records.
           - id: "3.1.1"
             name: "Metadata include: data provenance; version; variable names and units; geolocation information; ..."
             description: Please download a piece of the data for the available ECVs and check if the metadata content of the dataset contains all relevant information, such as, data provenance; model used, variable names and units, contact person, etc.
@@ -163,31 +170,37 @@ properties:
             name: "Quality check"
             key: interoperability_qc
             property: quality_check
+            description: Metadata must comply with relevant international standards. 
           - id: "3.2.1"
             name: Metadata implementation is consistent with the EU INSPIRE directive.
             description:
             key: metadata_implementation_is_consistent_with_the_eu_inspire_directive
             property: catalogue_provided_field
+            description: 
           - id: "3.2.2"
             name: Metadata comply with applicable NetCDF CF conventions.
             description: Please download a piece of the data form CADS for the available ECVs and check if the Metadata complying with the NetCDF4-CF convention or not.
             key: metadata_comply_with_applicable_net_cdf_cf_conventions
             property: catalogue_provided_field
+            description: 
           - id: "3.2.3"
             name: Descriptions of any ECVs and ECV products are consistent with GCOS-245.
             description: Please download a piece of the data from CADS and open the metadata of the file to check if long name/name of the provided variables follow the Standard and consistent with GCOS-245.
             key: descriptions_of_any_ec_vs_and_ecv_products_are_consistent_with_gcos_245
             property: catalogue_provided_field
+            description: 
           - id: "3.2.4"
             name: "Data and metadata are available in one of the formats: GRIB1, GRIB2, NetCDF4."
             description: Please download a piece of the data from CADS and check if the dataset format is in one of the standard formats (GRIB1, GRIB2, NetCDF4) or not.
             key: data_and_metadata_are_available_in_one_of_the_formats_grib_1_grib_2_net_cdf_4
             property: catalogue_provided_field
+            description: 
           - id: "3.2.5"
             name: A DOI is associated with the dataset.
             description: Please check if there is a DOI published for the dataset or not.
             key: a_doi_is_associated_with_the_dataset
             property: catalogue_provided_field
+            description: 
           - id: "comment_thread"
             key: comment_thread
             property: comment_thread
@@ -206,21 +219,25 @@ properties:
             name: "Quality check"
             key: content_qc
             property: quality_check
+            description: The content of data records must be fully documented.
           - id: "4.1.1"
             name: Documentation must include a general overview of the reanalysis products, their primary use, and a characterization of the models and observing systems used for the products.
             description: Please check the if available documentation on CADS is sufficiently provide the general description of the reanalysis products, their primary use, and a characterization of the models and observing systems used for the products, etc. Or not
             key: documentation_must_include_a_general_overview_of_the_reanalysis_products_their_primary_use_and_a_characterization_of_the_models_and_observing_systems_used_for_the_products
             property: catalogue_provided_field
+            description: 
           - id: "4.1.2"
             name: Documentation must include a detailed description of all post-processing steps implemented to transform the output from the originating reanalysis system into data products, such as re-gridding, temporal averaging, spatial averaging, integration and accumulation of physical quantities.
             description: Please check if the available documentation on CADS provides detailed description of all post-processing steps implemented to transform the output from the originating reanalysis system into data products, such as re-gridding, temporal averaging, spatial averaging, integration and accumulation of physical quantities. Or not.
             key: documentation_must_include_a_detailed_description_of_all_post_processing_steps_implemented_to_transform_the_output_from_the_originating_reanalysis_system_into_data_products_such_as_re_gridding_temporal_averaging_spatial_averaging_integration_and_accumulation_of_physical_quantities
             property: catalogue_provided_field
+            description: 
           - id: "4.1.3"
             name: Documentation must refer to data provenance, data licenses, digital object identifiers (doi), key references.
             description: Please check if the available documentation of t on CADS contains all required information about the data provenance, data licenses, doi, key references.
             key: documentation_must_refer_to_data_provenance_data_licenses_digital_object_identifiers_doi_key_references
             property: catalogue_provided_field
+            description: 
           - id: "comment_thread"
             key: comment_thread
             property: comment_thread
@@ -232,21 +249,25 @@ properties:
             name: "Quality check"
             key: scientific_basis_qc
             property: quality_check
+            description: The scientific methodology used to produce the data must be fully documented.
           - id: "4.2.1"
             name: One or more peer-reviewed publications must be available that document the originating reanalysis system used to generate the reanalysis products contained in the dataset. The publication(s) must describe the models, observations and data assimilation methods used for the reanalysis, and address performance indicators that are relevant for climate applications.
             description: Please check if there is at least one peer-reviewed publication for the dataset production documenting the originating reanalysis system used to generate the reanalysis products contained in the dataset. The publication(s) must describe the models, observations and data assimilation methods/system used for the reanalysis, assimilated data, and address performance indicators that are relevant for climate applications.
             key: one_or_more_peer_reviewed_publications_must_be_available_that_document_the_originating_reanalysis_system_used_to_generate_the_reanalysis_products_contained_in_the_dataset_the_publication_s_must_describe_the_models_observations_and_data_assimilation_methods_used_for_the_reanalysis_and_address_performance_indicators_that_are_relevant_for_climate_applications
             property: catalogue_provided_field
+            description: 
           - id: "4.2.2"
             name: Documentation must be available that provides a complete (and up-to-date) description of all observing systems and estimation methods used in the reanalysis production, including information that helps users to understand the impact of observations on the data content for different variables in different time periods.
             description: Please check if the available documentation on CADS provides a complete (and up-to-date) description of all observing systems and estimation methods used in the reanalysis production, including information that helps users to understand the impact of observations on the data content for different variables in different time periods.
             key: documentation_must_be_available_that_provides_a_complete_and_up_to_date_description_of_all_observing_systems_and_estimation_methods_used_in_the_reanalysis_production_including_information_that_helps_users_to_understand_the_impact_of_observations_on_the_data_content_for_different_variables_in_different_time_periods
             property: catalogue_provided_field
+            description: 
           - id: "4.2.3"
             name: Documentation must be available that addresses uncertainties in the reanalysis products, for different variables, and for timescales ranging from weather to climate.
             description: Please check of the available documentation for the dataset provide information about uncertainties in the reanalysis products, for different variables, and for timescales ranging from weather to climate.
             key: documentation_must_be_available_that_addresses_uncertainties_in_the_reanalysis_products_for_different_variables_and_for_timescales_ranging_from_weather_to_climate
             property: catalogue_provided_field
+            description: 
           - id: "comment_thread"
             key: comment_thread
             property: comment_thread
@@ -258,21 +279,25 @@ properties:
             name: "Quality check"
             key: quality_control_qc
             property: quality_check
+            description: Quality control and validation activities must be fully documented.
           - id: "4.3.1"
             name: Documentation must be available containing detailed information about the input observations used in the reanalysis, including data selection, quality control steps and bias adjustments.
             description: Please check if the available documentation on CADS provides a detailed information about the input observations used in the reanalysis, including data selection, quality control steps and bias adjustments.
             key: documentation_must_be_available_containing_detailed_information_about_the_input_observations_used_in_the_reanalysis_including_data_selection_quality_control_steps_and_bias_adjustments
             property: catalogue_provided_field
+            description: 
           - id: "4.3.2"
             name: Documentation must be available containing detailed information about methods, techniques and/or activities that have been implemented to ensure accuracy and consistency of the reanalysis products.
             description: Please check the available documentation on CADS and provide the assessment based on the described requirement
             key: documentation_must_be_available_containing_detailed_information_about_methods_techniques_and_or_activities_that_have_been_implemented_to_ensure_accuracy_and_consistency_of_the_reanalysis_products
             property: catalogue_provided_field
+            description: 
           - id: "4.3.3"
             name: Documentation must be available containing results of quality assessments of reanalysis products carried out by producers and/or third parties.
             description: Please check the available documentation on CADS  and provide the assessment based on the described requirement
             key: documentation_must_be_available_containing_results_of_quality_assessments_of_reanalysis_products_carried_out_by_producers_and_or_third_parties
             property: catalogue_provided_field
+            description: 
           - id: "comment_thread"
             key: comment_thread
             property: comment_thread
@@ -284,26 +309,31 @@ properties:
             name: "Quality check"
             key: user_guidance_qc
             property: quality_check
+            description: Detailed information must be available to assist users in using the data.
           - id: "4.4.1"
             name: A user guide must be available, addressing essential characteristics of reanalysis products, including uncertainties and how they are represented in the dataset.
             description: Please check if there is a user guidance is available for the dataset or not on CADS. If yes, please check if it addresses the essential characteristics of reanalysis products, including uncertainties and how they are represented in the dataset.
             key: a_user_guide_must_be_available_addressing_essential_characteristics_of_reanalysis_products_including_uncertainties_and_how_they_are_represented_in_the_dataset
             property: catalogue_provided_field
+            description: 
           - id: "4.4.2"
             name: A description of known issues with the reanalysis products must be available.
             description: Please check if the known issue for the dataset is available or not on CADS documentation.
             key: a_description_of_known_issues_with_the_reanalysis_products_must_be_available
             property: catalogue_provided_field
+            description: 
           - id: "4.4.3"
             name: A list of frequently asked questions for use of reanalysis products must be available.
             description: Please check if the FAQ for the dataset is publicly available or not in CADS.
             key: a_list_of_frequently_asked_questions_for_use_of_reanalysis_products_must_be_available
             property: catalogue_provided_field
+            description: 
           - id: "4.4.4"
             name: A list of how-to articles for simple applications of reanalysis products must be available.
             description: Please check if examples on simple applications of reanalysis products are available or not on CADS.
             key: a_list_of_how_to_articles_for_simple_applications_of_reanalysis_products_must_be_available
             property: catalogue_provided_field
+            description: 
           - id: "comment_thread"
             key: comment_thread
             property: comment_thread
