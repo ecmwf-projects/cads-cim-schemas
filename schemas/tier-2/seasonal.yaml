@@ -95,7 +95,7 @@ properties:
             name: Starting dates for re-forecasts cover the period 1993-2016 at least.
             key: starting_dates_for_re_forecasts_cover_the_period_1993_2016_at_least
             property: catalogue_provided_field
-            description: "For daily/sub-daily and monthly catalogs: please check if the re-forecast record cover at least the documented temporal coverage ‘1993-2016’".
+            description: "For daily/sub-daily and monthly catalogs: please check if the re-forecast record cover at least the documented temporal coverage ‘1993-2016’"
           - id: "2.1.7"
             name: Forecast anomalies cover at least 6 calendar months from their nominal start date.
             key: forecast_anomalies_cover_at_least_6_calendar_months_from_their_nominal_start_date
