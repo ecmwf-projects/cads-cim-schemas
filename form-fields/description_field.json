@@ -1,5 +1,17 @@
 {
+  "type": "object",
   "title": "Description",
-  "type": "string",
-  "description": "Fitness for purpose description"
+  "description": "Fitness for purpose description",
+  "properties": {
+    "content": {
+      "type": "string"
+    },
+    "references": {
+      "title": "References",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
 }
