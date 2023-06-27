@@ -1,17 +1,22 @@
 tasks:
   - key: upload-jupyter
     fields:
-      - id: review_jupyter
+      - id: review_jupyter_url
         weight: -1  # Always show at the top
 
   - key: review-jupyter
     fields:
-      - id: review_jupyter
+      - id: review_jupyter_url
         weight: -1  # Always show at the top
       - id: approve_reject_section
     ui_schemas:
-      - property: review_jupyter
+      - property: review_jupyter_url
         type: review
+
+  - key: final-jupyter
+    fields:
+      - id: final_jupyter_url
+        weight: -1  # Always show at the top
 
   - key: evaluator-start
     fields:

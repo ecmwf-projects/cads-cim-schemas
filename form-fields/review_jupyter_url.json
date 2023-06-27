@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "required": ["jupyter_notebook_url"],
+  "properties": {
+    "jupyter_notebook_url": {
+      "type": "string"
+    }
+  }
+}
