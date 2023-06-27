@@ -8,30 +8,28 @@ properties:
         key: 'description_field'
         property: description_field
         id: 'description_field'
-
       - name: Summary
         key: 'sumary'
         properties:
-        - name: Domain
-          key: 'domain_field'
-          property: domain_field
-          id: 'domain_field'
-          
-        - name: Product type
-          key: 'product_type_field'
-          property: product_type_field
-          id: 'product_type_field'
-          
-        - name: Temporal coverage
-          key: 'temporal_coverage_field'
-          property: temporal_coverage_field
-          id: 'temporal_coverage_field'
+          - name: Domain
+            key: 'domain_field'
+            property: domain_field
+            id: 'domain_field'
+
+          - name: Product type
+            key: 'product_type_field'
+            property: product_type_field
+            id: 'product_type_field'
+
+          - name: Temporal coverage
+            key: 'temporal_coverage_field'
+            property: temporal_coverage_field
+            id: 'temporal_coverage_field'
 
       - name: Available applications
         key: 'available_applications_field'
         property: available_applications_field
         id: 'available_applications_field'
-
 
   - id: 'comment_thread'
     key: comment_thread
