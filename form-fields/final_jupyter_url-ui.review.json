@@ -1,0 +1,4 @@
+{
+  "ui:field": "jupyterNotebookUrl",
+  "ui:readOnly": true
+}
