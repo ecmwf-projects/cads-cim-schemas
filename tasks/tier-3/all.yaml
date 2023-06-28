@@ -21,7 +21,7 @@ tasks:
   - key: evaluator-start
     fields:
       - id: use_case_field
-        weight: -1  # Always show at the top
+        weight: -2  # Always show at the top
       - id: final_jupyter_url
         weight: -1  # Always show at the top
       - id: forward
@@ -29,7 +29,7 @@ tasks:
   - key: evaluator
     fields:
       - id: use_case_field
-        weight: -1  # Always show at the top
+        weight: -2  # Always show at the top
       - id: final_jupyter_url
         weight: -1  # Always show at the top
       - id: forward
@@ -40,7 +40,7 @@ tasks:
   - key: reviewer
     fields:
       - id: use_case_field
-        weight: -1  # Always show at the top
+        weight: -2  # Always show at the top
       - id: final_jupyter_url
         weight: -1  # Always show at the top
     ui_schemas:
@@ -52,7 +52,7 @@ tasks:
   - key: data-provider
     fields:
       - id: use_case_field
-        weight: -1  # Always show at the top
+        weight: -2  # Always show at the top
       - id: final_jupyter_url
         weight: -1  # Always show at the top
     ui_schemas:
@@ -64,7 +64,7 @@ tasks:
   - key: qar-manager
     fields:
       - id: use_case_field
-        weight: -1  # Always show at the top
+        weight: -2  # Always show at the top
       - id: final_jupyter_url
         weight: -1  # Always show at the top
       - id: approve_reject_section
@@ -75,7 +75,7 @@ tasks:
   - key: eqc-manager
     fields:
       - id: use_case_field
-        weight: -1  # Always show at the top
+        weight: -2  # Always show at the top
       - id: final_jupyter_url
         weight: -1  # Always show at the top
       - id: approve_reject_section
