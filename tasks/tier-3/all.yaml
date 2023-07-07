@@ -1,30 +1,10 @@
 tasks:
-  - key: upload-jupyter
-    fields:
-      - id: review_jupyter_url
-        weight: -1  # Always show at the top
-
-  - key: review-jupyter
-    fields:
-      - id: review_jupyter_url
-        weight: -1  # Always show at the top
-      - id: approve_reject_section
-    ui_schemas:
-      - property: review_jupyter_url
-        type: review
-
-  - key: final-jupyter
-    fields:
-      - id: final_jupyter_url
-        weight: -1  # Always show at the top
-
   - key: evaluator-start
     fields:
       - id: use_case_field
         weight: -2  # Always show at the top
       - id: final_jupyter_url
         weight: -1  # Always show at the top
-      - id: forward
 
   - key: evaluator
     fields:
@@ -33,9 +13,6 @@ tasks:
       - id: final_jupyter_url
         weight: -1  # Always show at the top
       - id: forward
-    ui_schemas:
-      - property: final_jupyter_url
-        type: review
 
   - key: reviewer
     fields:
