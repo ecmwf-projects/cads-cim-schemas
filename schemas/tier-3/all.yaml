@@ -7,11 +7,18 @@ properties:
     property: use_case_field
     always_visible: true
     weight: -2  # Always show at the top
+    
+  - id: description_field
+    key: description_field
+    property: description_field
+    always_visible: true
+    weight: -1  # Always show at the top
+    
   - id: final_jupyter_url
     key: final_jupyter_url
     property: final_jupyter_url
     always_visible: true
-    weight: -1  # Always show at the top
+    weight: 0  # Always show at the top
 
   - id: 'comment_thread'
     key: comment_thread
