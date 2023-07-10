@@ -1,7 +1,7 @@
 {
   "type": "object",
   "title": "Description",
-  "description": "Fitness for purpose description",
+  "description": "",
   "properties": {
     "content": {
       "type": "string"
