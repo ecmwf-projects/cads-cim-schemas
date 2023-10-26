@@ -10,7 +10,216 @@
       "title": "References",
       "type": "array",
       "items": {
-        "type": "string"
+        "type": "object",
+        "properties": {
+          "Identifier": {
+            "type": "string",
+            "title": "Identifier"
+          },
+          "Creator": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "creatorName"
+              ],
+              "properties": {
+                "creatorName": {
+                  "type": "string"
+                },
+                "nameType": {
+                  "type": "string",
+                  "enum": [
+                    "ORGANIZATION",
+                    "PERSONAL"
+                  ],
+                  "enumNames": [
+                    "Organization",
+                    "Personal"
+                  ]
+                },
+                "givenName": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "familyName": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "nameIdentifier": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "nameIdentifierScheme": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "enum": [
+                          "ORCID",
+                          "ISNI",
+                          "ROR",
+                          "GRID"
+                        ],
+                        "enumNames": [
+                          "ORCID",
+                          "ISNI",
+                          "ROR",
+                          "GRID"
+                        ]
+                      },
+                      "schemeURI": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "affiliation": {
+                  "type": [
+                    "object",
+                    "null"
+                  ],
+                  "properties": {
+                    "affiliationIdentifier": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "schemeURI": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "Title": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "string"
+                },
+                "titleType": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "enum": [
+                    "ALTERNATIVE_TITLE",
+                    "SUBTITLE",
+                    "TRANSLATED_TITLE",
+                    "OTHER",
+                    null
+                  ],
+                  "enumNames": [
+                    "AlternativeTitle",
+                    "Subtitle",
+                    "TranslatedTitle",
+                    "Other",
+                    null
+                  ]
+                }
+              }
+            }
+          },
+          "Publisher": {
+            "type": "string"
+          },
+          "PublicationYear": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ResourceType": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "string"
+              },
+              "resourceTypeGeneral": {
+                "type": "string",
+                "enum": [
+                  "AUDIOVISUAL",
+                  "BOOK",
+                  "BOOKCHAPTER",
+                  "COLLECTION",
+                  "COMPUTATIONALNOTEBOOK",
+                  "CONFERENCEPAPER",
+                  "CONFERENCEPROCEEDING",
+                  "DATAPAPER",
+                  "DATASET",
+                  "DISSERTATION",
+                  "EVENT",
+                  "IMAGE",
+                  "INTERACTIVERESOURCE",
+                  "JOURNAL",
+                  "JOURNALARTICLE",
+                  "MODEL",
+                  "OUTPUTMANAGEMENTPLAN",
+                  "PEERREVIEW",
+                  "PHYSICALOBJECT",
+                  "PREPRINT",
+                  "REPORT",
+                  "SERVICE",
+                  "SOFTWARE",
+                  "SOUND",
+                  "STANDARD",
+                  "TEXT",
+                  "WORKFLOW",
+                  "OTHER"
+                ],
+                "enumNames": [
+                  "Audiovisual",
+                  "Book",
+                  "BookChapter",
+                  "Collection",
+                  "ComputationalNotebook",
+                  "ConferencePaper",
+                  "ConferenceProceeding",
+                  "DataPaper",
+                  "Dataset",
+                  "Dissertation",
+                  "Event",
+                  "Image",
+                  "InteractiveResource",
+                  "Journal",
+                  "JournalArticle",
+                  "Model",
+                  "OutputManagementPlan",
+                  "PeerReview",
+                  "PhysicalObject",
+                  "Preprint",
+                  "Report",
+                  "Service",
+                  "Software",
+                  "Sound",
+                  "Standard",
+                  "Text",
+                  "Workflow",
+                  "Other"
+                ]
+              }
+            }
+          }
+        }
       }
     }
   }
