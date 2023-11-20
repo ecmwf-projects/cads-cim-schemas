@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "title": "Assessment statement",
+  "description": "",
+  "properties": {
+    "content": {
+      "type": "string"
+    }
+  }
+}

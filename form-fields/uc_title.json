@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "title": "Use case title",
+  "description": "",
+  "properties": {
+    "content": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "title": "Methods",
+  "description": "",
+  "properties": {
+    "content": {
+      "type": "string"
+    }
+  }
+}

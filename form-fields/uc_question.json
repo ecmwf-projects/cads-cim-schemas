@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "title": "User question",
+  "description": "",
+  "properties": {
+    "content": {
+      "type": "string"
+    }
+  }
+}
