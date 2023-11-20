@@ -12,10 +12,20 @@
         "title": "Use case title",
         "description": "Please add use case title"
       },
-      "uc_comment": {
+      "uc_question": {
         "type": "string",
-        "title": "Quality assessment comment",
-        "description": "Please add EQC assessment comments here, including links, references, etc..."
+        "title": "Use case question",
+        "description": "Please add an use case question"
+      },
+      "uc_methods": {
+        "type": "string",
+        "title": "Use case methods",
+        "description": "Please fill in the methods"
+      },
+      "uc_assessment_statement": {
+        "type": "string",
+        "title": "Quality assessment statement",
+        "description": "Please add EQC assessment statement here, including links, references, etc..."
       },
       "uc_attachments": {
         "type": "array",
