@@ -1,6 +1,6 @@
 {
   "content": {
-    "ui:field": "mdEditor",
+    "ui:field": "mdEditorWithReferences",
     "ui:readOnly": true
   }
 }
