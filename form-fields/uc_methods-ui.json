@@ -1,3 +1,5 @@
 {
-  "ui:field": "mdEditor"
+  "content": {
+    "ui:field": "mdEditor"
+  }
 }

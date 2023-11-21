@@ -1,4 +1,6 @@
 {
-  "ui:field": "mdEditor",
-  "ui:readOnly": true
+  "content": {
+    "ui:field": "mdEditor",
+    "ui:readOnly": true
+  }
 }
