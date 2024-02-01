@@ -1,7 +1,7 @@
 name: Climate projections
 key: 'climate_projections'
 properties:
-  - name: General
+  - name: Data Management
     key: 'general'
     properties:
       - id: 'general-qc'
