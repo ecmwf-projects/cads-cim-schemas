@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "required": ["quality_check"],
+  "properties": {
+    "quality_check": {
+      "type": "string"
+    }
+  }
+}
