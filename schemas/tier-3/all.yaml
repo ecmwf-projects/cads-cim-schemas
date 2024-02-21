@@ -4,6 +4,8 @@ properties:
 
 - id: uc
   key: uc
+  name: Use Cases
+  always_visible: true
   type: array
   properties:
   - id: uc_title
