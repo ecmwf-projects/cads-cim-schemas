@@ -1,0 +1,42 @@
+{
+  "type": "array",
+  "title": "Quality Assessment",
+  "items": {
+    "type": "object",
+    "properties": {
+      "uc_key": {
+        "type": "string"
+      },
+      "uc_title": {
+        "type": "string",
+        "title": "Use case title",
+        "description": "Please add use case title"
+      },
+      "uc_question": {
+        "type": "string",
+        "title": "User question",
+        "description": "Please add an user question"
+      },
+      "uc_methods": {
+        "type": "string",
+        "title": "Methods",
+        "description": "Please fill in the methods"
+      },
+      "uc_assessment_statement": {
+        "type": "string",
+        "title": "Quality assessment ",
+        "description": "Please add EQC assessment statement here, including links, references, etc..."
+      },
+      "uc_final_jupyter_url": {
+        "type": "object",
+        "required": ["jupyter_notebook_url"],
+        "properties": {
+          "jupyter_notebook_url": {
+            "type": "string"
+          }
+        }
+      }
+      
+    }
+  }
+}

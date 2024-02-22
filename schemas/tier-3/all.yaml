@@ -2,14 +2,23 @@ name: Quality Assessment
 key: all
 properties:
 
+- id: ucs
+  key: ucs
+  title: "Use cases"
+  type: array
+  always_visible: true
+  weight: -1 # Always show at the top
+  properties:
   - id: uc_title
     key: uc_title
+    type: string
     property: uc_title
     always_visible: true
     weight: -5
 
   - id: uc_question
     key: uc_question
+    type: string
     property: uc_question
     always_visible: true
     weight: -4
@@ -24,27 +33,27 @@ properties:
     key: uc_assessment_statement
     property: uc_assessment_statement
     always_visible: true
-    weight: -2  # Always show at the top
+    weight: -2 # Always show at the top
 
-  - id: uc_attachments
-    key: uc_attachments
-    property: uc_attachments
-    always_visible: true
-
-  - id: description_field
-    key: description_field
-    property: description_field
-    always_visible: true
-    weight: -1  # Always show at the top
-    
   - id: final_jupyter_url
     key: final_jupyter_url
     property: final_jupyter_url
     always_visible: true
-    weight: 0  # Always show at the top
-
+    weight: -1 # Always show at the top
   - id: 'comment_thread'
     key: comment_thread
     property: comment_thread
     always_visible: true
-    weight: 9999  # Always show at the bottom
+    weight: 9999 # Always show at the bottom
+
+- id: description_field
+  key: description_field
+  property: description_field
+  always_visible: true
+  weight: 0
+
+- id: 'comment_thread'
+  key: comment_thread
+  property: comment_thread
+  always_visible: true
+  weight: 9999 # Always show at the bottom
