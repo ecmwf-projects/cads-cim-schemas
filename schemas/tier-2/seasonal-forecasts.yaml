@@ -1,0 +1,466 @@
+name: Seasonal
+key: seasonal
+properties:
+- name: Data Management
+  key: "general"
+  properties:
+  - id: "general-qc"
+    name: "Quality check"
+    key: general_qc
+    property: quality_check
+  - name: 1.1 Accuracy and Consistency
+    key: "accuracy_and_consistency"
+    properties:
+
+    - id: "accuracy_and_consistency-qc"
+      name: "Quality check"
+      key: accuracy_and_consistency_qc
+      property: quality_check
+
+    - id: "1.1"
+      name: 1.1 All information provided with the dataset must be consistent and reflect the data in the catalogue entry.
+      key: all_information_provided_with_the_dataset_must_be_accurate_and_consistent
+      property: quality_check
+      description: "The Overview page comprises three elements: (1) a text describing the general approach to seasonal forecasts, which remains the same for all catalogue entries; (2) a DATA DESCRIPTION presenting key dataset characteristics (e.g., resolution, temporal coverage, format); and (3) a MAIN VARIABLES section listing the available variables. \n\nThe provided information should be consistent with information found elsewhere in the catalogue entry (e.g. under DOCUMENTATION). This requirement solely focuses on checking the consistency of information (with)in the OVERVIEW and DOCUMENTATION pages, while the actual alignment between the information and the dataset is addressed in requirement 2.1.1 - 2.1.9.\n\nCheck if all provided information in the text is consistent with the DOCUMENTATION page\nCheck if the DATA DESCRIPTION section is consistent with the DOCUMENTATION page\nCheck if the MAIN VARIABLES section is consistent with the DOCUMENTATION page\n\n"
+  - name: 1.2 Reliable Access
+    key: "reliable_access"
+    properties:
+
+    - id: "reliable_access-qc"
+      name: "Quality check"
+      key: reliable_access_qc
+      property: quality_check
+
+    - id: "1.2"
+      name: 1.2 Access to all information must be open, free and reliable.
+      key: access_to_all_information_must_be_open_free_and_reliable
+      property: quality_check
+      description: "All information on the dataset must be open, reliable, and accessible directly from the Overview or from the Documentation page. \n\nCheck if all information is available as from Overview/documentation pages.\n\n"
+  - name: 1.3 Versioning and Archiving
+    key: "versioning_and_archiving"
+    properties:
+
+    - id: "versioning_and_archiving-qc"
+      name: "Quality check"
+      key: versioning_and_archiving_qc
+      property: quality_check
+
+    - id: "1.3"
+      name: 1.3 Appropriate version control and archiving policies must be in place.
+      key: adequate_version_control_and_archiving_policies_must_be_in_place
+      property: quality_check
+      description: |
+        Check the OVERVIEW/DOCUMENTATION pages for information.
+        - The version control process must be described for each catalogue entry
+        - The archiving policiy must be described for each catalogue entry
+
+  - id: "comment_thread"
+    key: comment_thread
+    property: comment_thread
+    always_visible: true
+
+- name: Data record
+  key: "data_records"
+
+  properties:
+  - id: "data_records-qc"
+    name: "Quality check"
+    key: data_records_qc
+    property: quality_check
+
+  - name: 2.1 Consistency
+    key: "consistency"
+    properties:
+    - id: "consistency-qc"
+      name: "Quality check"
+      key: consistency_qc
+      property: quality_check
+      description: The data must be complete and internally consistent.
+
+    - id: "2.1.1"
+      name: "2.1.1 Data records include ensembles of real-time global forecasts for all originating centres."
+      key: data_records_include_ensembles_of_real_time_global_seasonal_forecasts_and_associated_re_forecasts_produced_by_multiple_originating_centres
+      property: quality_check
+      description: |
+        Manual inspection (all forecast systems) on DOWNLOAD page by ticking boxes to see if forecast data are available for download (e.g.  https://cds.climate.copernicus.eu/cdsapp#!/dataset/seasonal-monthly-single-levels?tab=form). Potential missing data will be "grey shaded" and not possible to select.
+        Additionally, compare if centers in the description of the C3S seasonal multi-system (https://confluence.ecmwf.int/display/CKB/Description+of+the+C3S+seasonal+multi-system ) match the DOWNLOAD page.
+
+    - id: "2.1.2"
+      name: 2.1.2 Data records include ensembles of global re-forecasts covering the period 1993-2016 for all originating centres.
+      key: data_records_include_ensembles_of_real_time_global_forecast_anomalies_that_have_been_post_processed_for_bias_adjustment
+      property: quality_check
+      description: |
+        Manual inspection (all forecast systems) on DOWNLOAD page by ticking boxes to see if hindcast (1993-2016) data are available (e.g. https://cds.climate.copernicus.eu/cdsapp#!/dataset/seasonal-monthly-single-levels?tab=form). Potential missing data will be "grey shaded" and not possible to select.
+        Compare if centers in the description of the C3S seasonal multi-system ( https://confluence.ecmwf.int/display/CKB/Description+of+the+C3S+seasonal+multi-system ) match the DOWNLOAD page.
+
+    - id: "2.1.3"
+      name: 2.1.3 Individual ensemble members and corresponding ensemble means are available for real-time forecasts from all orginating centres.
+      key: ensemble_means_and_all_individual_ensemble_members_are_available_from_multiple_originating_centres
+      property: quality_check
+      description: |
+        Manual inspection (all forecast systems) on DOWNLOAD page by ticking boxes to see if ensemble mean data are available (e.g. https://cds.climate.copernicus.eu/cdsapp#!/dataset/seasonal-monthly-single-levels?tab=form ). Potential missing data will be "grey shaded" and not possible to select.
+        Compare if centers in the description of the C3S seasonal multi-system ( https://confluence.ecmwf.int/display/CKB/Description+of+the+C3S+seasonal+multi-system ) match the download page.
+        Perfrom sample test for each originating centres to check if the ensemble mean is made over all available individual ensemble members.
+
+    - id: "2.1.4"
+      name: 2.1.4 Real time forecasts and the associated re-forecasts are generated with identical system versions.
+      key: forecasts_and_associated_re_forecasts_are_generated_using_identical_system_versions_and_consistent_initial_conditions
+      property: quality_check
+      description: |
+        Check in the DOCUMENTATION page whether the same model versions and ensemble methods are applied to the near real time forecasts and the hindcasts.
+
+    - id: "2.1.5"
+      name: 2.1.5 Forecast and re-forecast data are available for all variables listed in the documentation.
+      key: forecasts_and_re_forecasts_cover_at_least_6_calendar_months_from_their_nominal_start_date
+      property: quality_check
+      description: |
+        Compare the listed variables (https://confluence.ecmwf.int/display/CKB/Detailed+list+of+parameters) that should be available and the variables available from the DOWNLOAD page. Internal note to evaluator: Inconsitencies should be reported to CDS/ECMWF.
+
+    - id: "2.1.6"
+      name: 2.1.6 All data are available on the same regular lat-lon grid (1x1 degree grid centred on 0.5 lat-lon values)
+      key: starting_dates_for_re_forecasts_cover_the_period_1993_2016_at_least
+      property: quality_check
+      description: |
+        Perform sample download from all forecast systems.
+
+    - id: "2.1.7"
+      name: 2.1.7 All data are provided on a consitent set of pressure levels.
+      key: forecast_anomalies_cover_at_least_6_calendar_months_from_their_nominal_start_date
+      property: quality_check
+      description: |
+        Check DOCUMENTATION and DOWNLOAD pages. At present (December 2023) most models include 12 pressure levels spanning 1000 hPa to 10 hPa.
+
+    - id: "2.1.8"
+      name: 2.1.8 Monthly statistics are consistent with the corresponding daily/sub-daily forecast data.
+      key: forecast_anomalies_are_available_at_monthly_resolution
+      property: quality_check
+      description: |
+        Perform with scripts some sample tests (can be automized with data checker). A comment on what scripts/tests that have been done should be included in the evauation in CIM. The same with any special things. e.g. related to the NCEP data (see comment column).
+
+    - id: "2.1.9"
+      name: 2.1.9 Real-time monthly anomalies are consistent with the monthly statistics.
+      key: forecast_and_re_forecast_data_are_available_for_all_listed_variables_as_documented
+      property: quality_check
+      description: |
+        Perform with scripts some sample tests (can be automized with data checker). A comment on what scripts/tests that have been done should be included in the evauation in CIM.
+
+    - id: "comment_thread"
+      key: comment_thread
+      property: comment_thread
+      always_visible: true
+
+  - name: 2.2 Uncertainty
+    key: "uncertainty"
+    properties:
+    - id: "uncertainty-qc"
+      name: "Quality check"
+      key: uncertainty_qc
+      property: quality_check
+      description: The data must include information about uncertainties.
+
+    - id: "2.2.1"
+      name: 2.2.1 Real-time forecast data comprise an ensemble of members that can be used to estimate uncertainties.
+      key: seasonal_forecast_data_comprise_an_ensemble_of_equally_likely_forecasts_that_can_be_used_to_estimate_uncertainties
+      property: quality_check
+      description: |
+        Check if ensemble members are available for real-time forecast data, so that it is possible to calculate uncertainties
+        Check that examples/explanation on how to calculate uncertainties exist in the documentation, and that the main differences between "burst mode" and "lagged mode" generated ensembles are described in the documentation
+
+    - id: "2.2.2"
+      name: 2.2.2 Re-forecast data comprise an ensemble of members that can be used to estimate uncertainties.
+      key: re_forecast_data_comprise_an_ensemble_of_equally_likely_hindcasts_that_can_be_used_to_estimate_uncertainties
+      property: quality_check
+      description: |
+        Check if ensemble members are available for real-time forecast data, so that it is possible to calculate uncertainties
+        Check that examples/explanation on how to calculate uncertainties exist in the documentation, and that the main differences between "burst mode" and "lagged mode" generated ensembles are described in the documentation
+
+    - id: "2.2.3"
+      name: 2.2.3 Uncertainty information is available for deterministic forecast products.
+      key: uncertainty_information_is_available_for_deterministic_forecast_products
+      property: quality_check
+      description: |
+        Check on download pages if forecast data  with uncertainty information associated with deterministic forecasts are available, i.e., standard deviation of the ensemble can be downloaded together with the ensemble mean for real-time forecast data.
+
+    - id: "comment_thread"
+      key: comment_thread
+      property: comment_thread
+      always_visible: true
+
+
+  - name: 2.3 Updates
+    key: "updates"
+    properties:
+    - id: "updates-qc"
+      name: "Quality check"
+      key: updates_qc
+      property: quality_check
+      description: Updates of the data records must be provided on a predictable schedule.
+
+    - id: "2.3.1"
+      name: 2.3.1 The real-time forecasts are updated on a regular basis and information about expected update date/time is provided.
+      key: updated_real_time_forecast_and_re_forecast_data_are_available_on_the_cds_by_12_utc_on_the_13_th_day_of_each_month
+      property: quality_check
+      description: Check the information on expected date in the OVERVIEW page [that information on overview/documentation pages are consistent] and perform sample tests on the availability at CDS around the given dates.
+
+    - id: "2.3.2"
+      name: 2.3.2 Operational version changes in the originating seasonal forecast systems are announced at least one month in advance.
+      key: operational_version_changes_in_the_originating_seasonal_forecast_systems_are_announced_at_least_one_month_in_advance
+      property: quality_check
+      description: Check for [missing reforecast in the DOWNLOAD page] and information about the expected update on overview/documentation pages. [where?]
+
+    - id: "2.3.2"
+      name: 2.3.3 In the event of system updates the schedule of re-forecast publication is documented, and the publication preceeds that of the corresponding real-time forecasts by at least a month.
+      key: in_the_event_of_system_updates_the_schedule_of_re-forecast_publication_is_documented_
+      property: quality_check
+      description: Check in the ANNOUNCEMENT section of the DOCUMENTATION page if the requirement is met.
+
+    - id: "comment_thread"
+      key: comment_thread
+      property: comment_thread
+      always_visible: true
+
+- name: Metadata
+  key: "metadata"
+  properties:
+
+  - id: "metadata-qc"
+    name: "Quality check"
+    key: metadata_qc
+    property: quality_check
+
+  - name: 3.1 Discovery and Use
+    key: "discovery_and_use"
+
+    properties:
+    - id: "discovery_and_use-qc"
+      name: "Quality check"
+      key: discovery_and_use_qc
+      property: quality_check
+      description: Metadata must include all necessary information for discovery and proper use of the data records
+
+    - id: "3.1.1"
+      name: "3.1.1 Metadata from decoded GRIB1 files include: originating centre; version; variable names and units; geolocation information, time information."
+      key: metadata_include_data_provenance_version_variable_names_and_units_geolocation_information_see_list
+      property: quality_check
+      description: "Download sample tests, check if required metadata is available, possible to decode, and reasonable."
+
+    - id: "3.1.2"
+      name: "3.1.2 Metadata in NetCDF files include: Originating centre; version; variable names and units; geolocation information, time information."
+      key: metadata_in_netcdf_files_include:_originating_centre_version_variable_names_and_units_geolocation_information_time_information
+      property: quality_check
+      description: "Download sample tests, check if required metadata is available and reasonable."
+
+    - id: "comment_thread"
+      key: comment_thread
+      property: comment_thread
+      always_visible: true
+
+  - name: 3.2 Interoperability
+    key: "interoperability"
+    properties:
+
+    - id: "interoperability-qc"
+      name: "Quality check"
+      key: interoperability_qc
+      property: quality_check
+      description: Metadata must comply with relevant international standards.
+
+    - id: "3.2.1"
+      name: 3.2.1 NetCDF Metadata comply with applicable NetCDF CF conventions.
+      key: metadata_implementation_is_consistent_with_the_eu_inspire_directive
+      property: quality_check
+      description: "Check if relevant metadata is available in a separate metadata file, or included in data files.\n\nMetadata include the following information listed in Art. 1 of the EU INSPIRE (https://knowledge-base.inspire.ec.europa.eu/index_en) directive:\n\n(b) conditions applying to access to, and use of, spatial data sets and services and, where applicable, corresponding fees;\n(c) the quality and validity of spatial data sets (e.g. reference to the corresponding quality assurance itself);\n(d) the public authorities responsible for the establishment, management, maintenance and distribution of spatial data sets and services;\n(e) limitations on public access and the reasons for such limitations, \n\n"
+    - id: "3.2.2"
+      name: 3.2.2 NetCDF and decoded GRIB1 metdata are consistent.
+      key: netcdf_and_decoded_grib1_metdata_are_consistent
+      property: quality_check
+      description: |
+        Check sample tests from 3.1.1 with applicable NetCDF CF conventions ( https://cfconventions.org/ )
+
+    - id: "3.2.3"
+      name: 3.2.3 A DOI is associated with the dataset.
+      key: a_doi_is_associated_with_the_dataset
+      property: quality_check
+      description: "Please check the existence of DOI for each seasonal forecast catalogue entry."
+
+    - id: "comment_thread"
+      key: comment_thread
+      property: comment_thread
+      always_visible: true
+
+- name: Documentation
+  key: "documentation"
+  properties:
+
+  - id: "documentation-qc"
+    name: "Quality check"
+    key: documentation_qc
+    property: quality_check
+
+  - name: 4.1 Content
+    key: "content"
+    properties:
+
+    - id: "content-qc"
+      name: "Quality check"
+      key: content_qc
+      property: quality_check
+      description: The content of data records must be fully documented.
+
+    - id: "4.1.1"
+      name: "4.1.1 Documentation must include a general overview of the data records and their primary use."
+      key: documentation_must_include_a_general_overview_of_the_data_records_and_their_primary_use
+      property: quality_check
+      description: |
+        Check the OVERVIEW/ DOCUMENTATION page for a general overview of the different data records.
+
+    - id: "4.1.2"
+      name: "4.1.2 Documentation must include a detailed description of all available variables in each data record, the spatial coverage and resolution, temporal coverage and resolution, forecast lead times, ensemble properties, data update frequencies."
+      key: documentation_must_include_a_detailed_description_of_all_available_variables_in_each_data_record_their_spatial_coverage_and_resolution_temporal_coverage_and_resolution_forecast_lead_times_ensemble_properties_data_update_frequencies_etc
+      property: quality_check
+      description: "Check the DOCUMENTATION pages if information is available.\nThe documentation should include:\n- announcements of updates in the data records\n- the list of available variables for each model in CDS\n- the spatial coverage and resolution in CDS\n- the temporal coverage and resolution in CDS\n- a description of the ensemble initialization mode (\"burst\" or \"lagged\")\n- expected updates of the data record in CDS\n- tips for efficient data retrieval\n- know issues in the data records \n\n"
+    - id: "4.1.3"
+      name: 4.1.3 Documentation must refer to data producers, data licenses, digital object identifiers (DOI), and key references
+      key: documentation_must_refer_to_data_producers_data_licenses_digital_object_identifiers_doi_key_references
+      property: quality_check
+      description: Check the pages dedicated to each provider in the Description of the C3S seasonal multi-system section of the DOCUMENTATION pages.
+
+    - id: "comment_thread"
+      key: comment_thread
+      property: comment_thread
+      always_visible: true
+
+  - name: 4.2 Scientific Basis
+    key: "scientific_basis"
+    properties:
+
+    - id: "scientific_basis-qc"
+      name: "Quality check"
+      key: scientific_basis_qc
+      property: quality_check
+      description: The scientific methodology used to produce the data must be fully documented
+
+    - id: "4.2.1"
+      name: 4.2.1 The scientific basis for the seasonal forecast systems used to produce the forecast and re-forecast data must be documented in technical reports or peer-reviewed publications.
+      key: the_scientific_basis_for_the_seasonal_forecast_systems_used_to_produce_the_forecast_and_re_forecast_data_must_be_documented_in_peer_reviewed_publications
+      property: quality_check
+      description: |
+        Check for references in the DOCUMENTATION pages dedicated to each individual forecast system in Description of the C3S seasonal multi-system section.
+
+        The scientific basis for the seasonal forecasts systems used to produce forecast and re-forecast must be documented with one or more of following publications/reports:
+        - peer reviewed publication on the validation of the modelling systems;
+        - peer reviewed publication on the validation of the different components of each modelling systems;
+        - other techincal reports describing the implementation and validation of each seasonal forecast system.
+
+    - id: "4.2.2"
+      name: 4.2.2 The technical implementation of each seasonal forecast system used to produce forecast and re-forecast data must be documented. The technical description includes a summary of the updates between versions.
+      key: the_technical_implementation_of_each_seasonal_forecast_system_used_to_produce_forecast_and_re_forecast_data_must_be_documented
+      property: quality_check
+      description: |
+        Check information on techincal implementation in the pages dedicated to each individual forecast system in Description of the C3S seasonal multi-system section of the DOCUMENTATION page.
+
+    - id: "4.2.3"
+      name: 4.2.3 The post-processing steps implemented to transform original model output into C3S data records must be documented.
+      key: the_post_processing_steps_implemented_to_transform_original_model_output_into_c_3_s_data_records_must_be_documented
+      property: quality_check
+      description: "Check the DOCUMENTATION page for information"
+
+    - id: "4.2.4"
+      name: 4.2.4 The post-processing steps implemented to derive monthly statistics from model output must be documented.
+      key: the_post_processing_steps_implemented_to_derive_monthly_statistics_from_model_output_must_be_documented
+      property: quality_check
+      description: Check the DOCUMENTATION page for information
+
+    - id: "4.2.5"
+      name: 4.2.5 The post-processing steps implemented to derive monthly anomalies from monthly statistics must be documented.
+      key: the_post_processing_steps_implemented_to_derive_monthly_anomalies_from_model_output_must_be_documented
+      property: quality_check
+      description: Check the DOCUMENTATION page for information
+
+    - id: "4.2.6"
+      name: 4.2.6 The post-processing steps implemented to derive enseble means from ensemble members must be documented.
+      key: the_post_processing_steps_implemented_to_derive_enseble_means_from_model_output_must_be_documented
+      property: quality_check
+      description: Check the DOCUMENTATION page for information
+
+    - id: "comment_thread"
+      key: comment_thread
+      property: comment_thread
+      always_visible: true
+
+  - name: 4.3 Quality Control
+    key: quality_control
+    properties:
+    - id: "quality_control-qc"
+      name: "4.3 Quality Control"
+      key: quality_control_qc
+      property: quality_check
+      description: Quality control and validation activities must be fully documented.
+
+    - id: "4.3.1"
+      name: 4.3.1 Documentation must include descriptions of the quality control process by the originating centers and by C3S.
+      key: documentation_must_include_descriptions_and_results_of_methods_procedures_and_or_systems_that_have_been_implemented_to_mitigate_potential_issues_in_production_and_post_processing_that_can_affect_data_quality
+      property: quality_check
+      description: |
+        Check the DOCUMENTATION tab.
+
+    - id: "4.3.2"
+      name: 4.3.2 Documentation must include results of evaluations by the originating centres and/or third parties of key performance indicators for the seasonal forecast systems.
+      key: documentation_must_include_results_of_evaluations_by_the_originating_centres_and_or_third_parties_of_key_performance_indicators_for_their_seasonal_forecast_systems
+      property: quality_check
+      description: Check if information about evaluations, or links/references to such evaluations are available.
+
+    - id: "4.3.3"
+      name: 4.3.3 The implementation of new system versions must be provided with a description of significant system changes as well as an assessment of changes in key performance indicators.
+      key: implementation_of_new_system_versions_must_be_provided_with_a_description_of_significant_system_changes_as_well_as_an_assessment_of_changes_in_key_performance_indicators
+      property: quality_check
+      description: Check information on the implementation of new version in the pages dedicated to each individual forecast system in Description of the C3S seasonal multi-system section of the DOCUMENTATION tab.
+
+    - id: "comment_thread"
+      key: comment_thread
+      property: comment_thread
+      always_visible: true
+
+  - name: 4.4 User Guidance
+    key: "user_guidance"
+    properties:
+
+    - id: "user_guidance-qc"
+      name: "Quality check"
+      key: user_guidance_qc
+      property: quality_check
+      description: Detailed information must be available to assist users in using the data.
+
+    - id: "4.4.1"
+      name: 4.4.1 User guidance must be provided on essential characteristics of seasonal forecast data, including uncertainties and how they can be quantified.
+      key: user_guidance_must_be_provided_on_essential_characteristics_of_seasonal_forecast_data_including_uncertainties_and_how_they_can_be_quantified
+      property: quality_check
+      description: Check the OVERVIEW and DOCUMENTATION pages for relevant information or links to external existing publications.
+
+    - id: "4.4.2"
+      name: 4.4.2 A description of known issues with the data must be available.
+      key: a_description_of_known_issues_with_the_data_must_be_available
+      property: quality_check
+      description: Check the latest updates in the Fixed Issues table and Not Fixed Issues Table of the  KNOWN ISSUES section  in the DOCUMENTATION page.
+
+    - id: "4.4.3"
+      name: 4.4.3 A list of frequently asked questions for seasonal forecast data must be available.
+      key: a_list_of_frequently_asked_questions_for_seasonal_forecast_data_must_be_available
+      property: quality_check
+      description: Check if FAQ page exist. If not, list available alternative(s) in explanations, i.e. the support portal found on the right-hand-side of the CADS dataset entry page.
+
+    - id: "4.4.4"
+      name: 4.4.4 Examples of simple applications of seasonal forecast data must be available.
+      key: examples_of_simple_applications_of_seasonal_forecast_data_must_be_available
+      property: quality_check
+      description: Check if examples exists and linked from Documentation/OVERVIEW pages.
+
+    - id: "comment_thread"
+      key: comment_thread
+      property: comment_thread
+      always_visible: true
+
+- name: Approve/Reject section
+  property: approve_reject_section
+  key: "approve_reject_section"
+  id: "approve_reject_section"
