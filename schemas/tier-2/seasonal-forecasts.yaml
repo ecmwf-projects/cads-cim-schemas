@@ -4,10 +4,11 @@ properties:
 - name: Data Management
   key: "general"
   properties:
+
   - id: "general-qc"
     name: "Quality check"
     key: general_qc
-    property: quality_check
+    property: auto_quality_check
   - name: 1.1 Accuracy and Consistency
     key: "accuracy_and_consistency"
     properties:
@@ -15,7 +16,7 @@ properties:
     - id: "accuracy_and_consistency-qc"
       name: "Quality check"
       key: accuracy_and_consistency_qc
-      property: quality_check
+      property: hidden_auto_quality_check
 
     - id: "1.1"
       name: 1.1 All information provided with the dataset must be consistent and reflect the data in the catalogue entry.
@@ -29,7 +30,7 @@ properties:
     - id: "reliable_access-qc"
       name: "Quality check"
       key: reliable_access_qc
-      property: quality_check
+      property: hidden_auto_quality_check
 
     - id: "1.2"
       name: 1.2 Access to all information must be open, free and reliable.
@@ -43,7 +44,7 @@ properties:
     - id: "versioning_and_archiving-qc"
       name: "Quality check"
       key: versioning_and_archiving_qc
-      property: quality_check
+      property: hidden_auto_quality_check
 
     - id: "1.3"
       name: 1.3 Appropriate version control and archiving policies must be in place.
@@ -66,7 +67,7 @@ properties:
   - id: "data_records-qc"
     name: "Quality check"
     key: data_records_qc
-    property: quality_check
+    property: auto_quality_check
 
   - name: 2.1 Consistency
     key: "consistency"
@@ -74,7 +75,7 @@ properties:
     - id: "consistency-qc"
       name: "Quality check"
       key: consistency_qc
-      property: quality_check
+      property: auto_quality_check
       description: The data must be complete and internally consistent.
 
     - id: "2.1.1"
@@ -155,7 +156,7 @@ properties:
     - id: "uncertainty-qc"
       name: "Quality check"
       key: uncertainty_qc
-      property: quality_check
+      property: auto_quality_check
       description: The data must include information about uncertainties.
 
     - id: "2.2.1"
@@ -193,7 +194,7 @@ properties:
     - id: "updates-qc"
       name: "Quality check"
       key: updates_qc
-      property: quality_check
+      property: auto_quality_check
       description: Updates of the data records must be provided on a predictable schedule.
 
     - id: "2.3.1"
@@ -226,7 +227,7 @@ properties:
   - id: "metadata-qc"
     name: "Quality check"
     key: metadata_qc
-    property: quality_check
+    property: auto_quality_check
 
   - name: 3.1 Discovery and Use
     key: "discovery_and_use"
@@ -235,7 +236,7 @@ properties:
     - id: "discovery_and_use-qc"
       name: "Quality check"
       key: discovery_and_use_qc
-      property: quality_check
+      property: auto_quality_check
       description: Metadata must include all necessary information for discovery and proper use of the data records
 
     - id: "3.1.1"
@@ -262,7 +263,7 @@ properties:
     - id: "interoperability-qc"
       name: "Quality check"
       key: interoperability_qc
-      property: quality_check
+      property: auto_quality_check
       description: Metadata must comply with relevant international standards.
 
     - id: "3.2.1"
@@ -295,7 +296,7 @@ properties:
   - id: "documentation-qc"
     name: "Quality check"
     key: documentation_qc
-    property: quality_check
+    property: auto_quality_check
 
   - name: 4.1 Content
     key: "content"
@@ -304,7 +305,7 @@ properties:
     - id: "content-qc"
       name: "Quality check"
       key: content_qc
-      property: quality_check
+      property: auto_quality_check
       description: The content of data records must be fully documented.
 
     - id: "4.1.1"
@@ -337,7 +338,7 @@ properties:
     - id: "scientific_basis-qc"
       name: "Quality check"
       key: scientific_basis_qc
-      property: quality_check
+      property: auto_quality_check
       description: The scientific methodology used to produce the data must be fully documented
 
     - id: "4.2.1"
@@ -394,7 +395,7 @@ properties:
     - id: "quality_control-qc"
       name: "4.3 Quality Control"
       key: quality_control_qc
-      property: quality_check
+      property: auto_quality_check
       description: Quality control and validation activities must be fully documented.
 
     - id: "4.3.1"
@@ -428,7 +429,7 @@ properties:
     - id: "user_guidance-qc"
       name: "Quality check"
       key: user_guidance_qc
-      property: quality_check
+      property: auto_quality_check
       description: Detailed information must be available to assist users in using the data.
 
     - id: "4.4.1"
