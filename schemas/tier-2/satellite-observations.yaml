@@ -1,0 +1,384 @@
+name: Satellite
+key: satellite-observations
+properties:
+- name: General
+  key: "general"
+  properties:
+
+  - id: "general-qc"
+    name: "Quality check"
+    key: general_qc
+    property: auto_quality_check
+
+  - name: 1.1 Accuracy and Consistency
+    key: "accuracy_and_consistency"
+    properties:
+
+    - id: "accuracy_and_consistency-qc"
+      name: "Quality check"
+      key: accuracy_and_consistency_qc
+      property: hidden_auto_quality_check
+
+    - id: "1.1.1"
+      name: 1.1.1 All information provided with the dataset must be consistent and reflect the data in the catalogue entry
+      key: all_information_provided_with_the_dataset_must_be_accurate_and_consistent
+      property: quality_check
+      description: "Check if all provided information is consistent. \n\n\nCheck the OVERVIEW panel for a description of the required information:\n\n\n- documentation of all kinds, \n\n\n- confluence/knowledge-base articles, \n\n\n- the catalogue entry overview and summary, \n\n\n- the download  form and (where relevant) the metadata. \n\n\nCheck the consistency between the data description section and the corresponding data\n\n\n"
+  - name: 1.2 Reliable Access
+    key: "reliable_access"
+    properties:
+
+    - id: "reliable_access-qc"
+      name: "Quality check"
+      key: reliable_access_qc
+      property: hidden_auto_quality_check
+
+    - id: "1.2.1"
+      name: 1.2.1 Access to all information must be open, free and reliable
+      key: access_to_all_information_must_be_open_free_and_reliable
+      property: quality_check
+      description: |
+        Check if all information is available as from OVERVIEW and DOCUMENTATION pages. Here 'all information' includes the dataset AND the documentation. To make sure there are no issues around broken links, problematic page structure and navigation etc, that also could be considered to affect the 'reliability of access'.
+
+  - name: 1.3 Versioning and Archiving
+    key: "versioning_and_archiving"
+    properties:
+
+    - id: "versioning_and_archiving-qc"
+      name: "Quality check"
+      key: versioning_and_archiving_qc
+      property: hidden_auto_quality_check
+
+    - id: "1.3.1"
+      name: 1.3.1 Appropriate version control and archiving policies must be in place and documented.
+      key: adequate_version_control_and_archiving_policies_must_be_in_place
+      property: quality_check
+      description: |
+        Check the OVERVIEW and DOCUMENTATION pages for information.
+        - The version control process must be described for each catalogue entry
+        - The archiving policy must be described for each catalogue entry
+
+  - id: "comment_thread"
+    key: comment_thread
+    property: comment_thread
+    always_visible: true
+
+- name: Data record
+  key: "data_records"
+
+  properties:
+  - id: "data_records-qc"
+    name: "Quality check"
+    key: data_records_qc
+    property: auto_quality_check
+
+  - name: 2.1 Consistency
+    key: "consistency"
+    properties:
+    - id: "consistency-qc"
+      name: "Quality check"
+      key: consistency_qc
+      property: auto_quality_check
+      description: The data must be complete and internally consistent.
+
+    - id: "2.1.1"
+      name: 2.1.1 Data records are global and/or regional ECV products derived from satellite observations.
+      key: data_records_include_ensembles_of_real_time_global_seasonal_forecasts_and_associated_re_forecasts_produced_by_multiple_originating_centres
+      property: quality_check
+      description: |
+        Check from the DOCUMENTATION if the dataset is purely based on satellite observations, or if it (strongly) relies in ancillary data such as insitu, reanalysis or model data.
+
+    - id: "2.1.2"
+      name: 2.1.2 Data records are produced using methods and systems designed for climate data records (CDRs) that capture climate variability and change.
+      key: data_records_include_ensembles_of_real_time_global_forecast_anomalies_that_have_been_post_processed_for_bias_adjustment
+      property: quality_check
+      description: |
+        Check if the CDRs meet basic accuracy, precision, stability and completeness (including sufficient length) requirements. This should be reported in the PQAR.
+
+    - id: "2.1.4"
+      name: 2.1.4 CDRs are periodically reprocessed in their entirety based on improved algorithms and/or newly available observations.
+      key: forecasts_and_associated_re_forecasts_are_generated_using_identical_system_versions_and_consistent_initial_conditions
+      property: quality_check
+      description: |
+        Check that in the DOCUMENTATION and DOWNLOAD tabs it is indicated whether the CDRs are periodically reprocessed by ingesting new data or improved algorithms
+
+    - id: "2.1.5"
+      name: 2.1.5 CDRs and ICDRs are available on pre-defined  space-time grid (data processing level 3 or higher).
+      key: forecasts_and_re_forecasts_cover_at_least_6_calendar_months_from_their_nominal_start_date
+      property: quality_check
+      description: |
+        Inspection of coordinate variables and see if they fit into the cases described in here https://cfconventions.org/Data/cf-conventions/cf-conventions-1.7/build/ch05s06.html
+
+    - id: "2.1.6"
+      name: 2.1.6 Monthly averaged data are available for CDRs and ICDRs where appropriate.
+      key: starting_dates_for_re_forecasts_cover_the_period_1993_2016_at_least
+      property: quality_check
+      description: |
+        Check if the DOCUMENTATION and OVERVIEW report that the data at monthly frequency are available
+
+    - id: "comment_thread"
+      key: comment_thread
+      property: comment_thread
+      always_visible: true
+
+  - name: 2.2 Uncertainty
+    key: "uncertainty"
+    properties:
+    - id: "uncertainty-qc"
+      name: "Quality check"
+      key: uncertainty_qc
+      property: hidden_auto_quality_check
+      description: The data must include information about uncertainties.
+
+    - id: "2.2.1"
+      name: 2.2.1 Estimates of uncertainty are provided for each ECV product in the dataset
+      key: seasonal_forecast_data_comprise_an_ensemble_of_equally_likely_forecasts_that_can_be_used_to_estimate_uncertainties
+      property: quality_check
+      description: "Download a data sample and check if the uncertainty information is in data files an ancillary layer. \n\n\nInternal note: data sample comprises a few randomly selected files for different years and processing levels (if applicable)\n\n\n"
+    - id: "comment_thread"
+      key: comment_thread
+      property: comment_thread
+      always_visible: true
+
+  - name: 2.3 Updates
+    key: "updates"
+    properties:
+    - id: "updates-qc"
+      name: "Quality check"
+      key: updates_qc
+      property: auto_quality_check
+      description: Updates of the data records must be provided on a predictable schedule.
+
+    - id: "2.3.1"
+      name: 2.3.1 Interim climate data records (ICDRs) are updated on a regular schedule.
+      key: updated_real_time_forecast_and_re_forecast_data_are_available_on_the_cds_by_12_utc_on_the_13_th_day_of_each_month
+      property: quality_check
+      description: |
+        Check the information on the expected update schedule in the OVERVIEW page and perform sample tests on the data availability around the given dates and cross-check product documentation and the download data form
+
+    - id: "2.3.2"
+      name: 2.3.2 Availability of reprocessed CDRs must be announced 3 months in advance.
+      key: operational_version_changes_in_the_originating_seasonal_forecast_systems_are_announced_at_least_one_month_in_advance
+      property: quality_check
+      export: false # Do not export to the Webportal
+      description: |
+        Check in the ANNOUNCEMENT section of the DOCUMENTATION page if the requirement is met.
+
+    - id: "comment_thread"
+      key: comment_thread
+      property: comment_thread
+      always_visible: true
+
+- name: Metadata
+  key: "metadata"
+  properties:
+
+  - id: "metadata-qc"
+    name: "Quality check"
+    key: metadata_qc
+    property: auto_quality_check
+
+  - name: 3.1 Discovery and Use
+    key: "discovery_and_use"
+
+    properties:
+    - id: "discovery_and_use-qc"
+      name: "Quality check"
+      key: discovery_and_use_qc
+      property: auto_quality_check
+      description: Metadata must include all necessary information for discovery and proper use of the data records
+
+    - id: "3.1.1"
+      name: "3.1.1 Metadata include: data provenance; version; variable names and units; geolocation information; time information, producers, contact information"
+      key: metadata_include_data_provenance_version_variable_names_and_units_geolocation_information_see_list
+      property: quality_check
+      description: "Download a data sample and check if required metadata is available and coherent with the description.\n\n\nInternal note: data sample comprises a few randomly selected files for different years and processing levels (if applicable) \n\n\nInternal note 2: the list of metadata is derived from the CCI standard (https://climate.esa.int/en/data/esa-cci-data-standards/, latest version 2.3 as of February, 2024) and meant to be applicable beyond the CCI-related datasets\"\n\n\n"
+    - id: "comment_thread"
+      key: comment_thread
+      property: comment_thread
+      always_visible: true
+
+  - name: 3.2 Interoperability
+    key: "interoperability"
+    properties:
+
+    - id: "interoperability-qc"
+      name: "Quality check"
+      key: interoperability_qc
+      property: auto_quality_check
+      description: Metadata must comply with relevant international standards.
+
+    - id: "3.2.1"
+      name: 3.2.1 Metadata implementation is consistent with the EU INSPIRE directive.
+      key: metadata_implementation_is_consistent_with_the_eu_inspire_directive
+      property: quality_check
+      description: "Check if relevant metadata listed in the requirement is available in a separate metadata file, or included in data files.\nMetadata include the following information listed in Art. 1 of the EU INSPIRE (https://knowledge-base.inspire.ec.europa.eu/index_en) directive:\n\n\n(b) conditions applying to access to, and use of, spatial data sets and services and, where applicable, corresponding fees;\n(c) the quality and validity of spatial data sets (e.g. reference to the corresponding quality assurance itself);\n(d) the public authorities responsible for the establishment, management, maintenance and distribution of spatial data sets and services;\n(e) limitations on public access and the reasons for such limitations, \n\n\nInternal note: where is point (a)?\n\n\n"
+    - id: "3.2.2"
+      name: 3.2.2 Metadata comply with applicable NetCDF CF conventions.
+      key: netcdf_and_decoded_grib1_metdata_are_consistent
+      property: quality_check
+      description: |
+        "Download a data sample and check that files follow the CF conventions (if applicable).
+
+        Internal note: data sample comprises a few randomly selected files for different years and processing levels (if applicable)
+
+    - id: "3.2.4"
+      name: 3.2.4 Data and metadata are available in the NetCDF4 format.
+      key: a_doi_is_associated_with_the_dataset
+      property: quality_check
+      description: |
+        Download a data sample and check that files are in NetCDF4 format (if applicable).
+
+        Internal note: data sample comprises a few randomly selected files for different years and processing levels (if applicable)
+
+    - id: "comment_thread"
+      key: comment_thread
+      property: comment_thread
+      always_visible: true
+
+- name: Documentation
+  key: "documentation"
+  properties:
+
+  - id: "documentation-qc"
+    name: "Quality check"
+    key: documentation_qc
+    property: auto_quality_check
+
+  - name: 4.1 Content
+    key: "content"
+    properties:
+
+    - id: "content-qc"
+      name: "Quality check"
+      key: content_qc
+      property: auto_quality_check
+      description: The content of data records must be fully documented.
+
+    - id: "4.1.1"
+      name: 4.1.1 Documentation must include a general overview of the ECV products included, their primary use, and the observing systems incorporated in the products.
+      key: documentation_must_include_a_general_overview_of_the_data_records_and_their_primary_use
+      property: quality_check
+      description: |
+        Check the OVERVIEW and DOCUMENTATION tabs for a general overview of the different data records.
+
+    - id: "4.1.2"
+      name: 4.1.2 Documentation must include a detailed description of all data records contained in the dataset, their data processing levels , spatial coverage and resolution, temporal coverage and resolution, data update frequencies, etc.
+      key: documentation_must_include_a_detailed_description_of_all_available_variables_in_each_data_record_their_spatial_coverage_and_resolution_temporal_coverage_and_resolution_forecast_lead_times_ensemble_properties_data_update_frequencies_etc
+      property: quality_check
+      description: Check the DOCUMENTATION tab.
+
+    - id: "4.1.3"
+      name: 4.1.3 Documentation must refer to data provenance, data licenses, digital object identifiers (doi), key references.
+      key: documentation_must_refer_to_data_producers_data_licenses_digital_object_identifiers_doi_key_references
+      property: quality_check
+      description: Check the DOCUMENTATION tab.
+
+    - id: "comment_thread"
+      key: comment_thread
+      property: comment_thread
+      always_visible: true
+
+  - name: 4.2 Scientific Basis
+    key: "scientific_basis"
+    properties:
+
+    - id: "scientific_basis-qc"
+      name: "Quality check"
+      key: scientific_basis_qc
+      property: auto_quality_check
+      description: The scientific methodology used to produce the data must be fully documented
+
+    - id: "4.2.1"
+      name: 4.2.1 The scientific basis for the CDRs contained in the dataset must be documented in peer-reviewed publications.
+      key: the_scientific_basis_for_the_seasonal_forecast_systems_used_to_produce_the_forecast_and_re_forecast_data_must_be_documented_in_peer_reviewed_publications
+      property: quality_check
+      description: Check for references in the documentation tab.
+
+    - id: "4.2.2"
+      name: 4.2.2 The observing systems and algorithms used to derive the CDRs and ICDRs in the dataset, as well as methodology for unertainty estimates, must be fully documented.
+      key: the_technical_implementation_of_each_seasonal_forecast_system_used_to_produce_forecast_and_re_forecast_data_must_be_documented
+      property: quality_check
+      description: Check information on technical implementation in the pages dedicated to each dataset in the section of the DOCUMENTATION tab.
+
+    - id: "comment_thread"
+      key: comment_thread
+      property: comment_thread
+      always_visible: true
+
+  - name: 4.3 Quality Control
+    key: quality_control
+    properties:
+    - id: "quality_control-qc"
+      name: "4.3 Quality Control"
+      key: quality_control_qc
+      property: auto_quality_check
+      description: Quality control and validation activities must be fully documented.
+
+    - id: "4.3.1"
+      name: 4.3.1 Documentation must contain detailed information about the use of input observations, including data selection, quality control steps.
+      key: documentation_must_include_descriptions_and_results_of_methods_procedures_and_or_systems_that_have_been_implemented_to_mitigate_potential_issues_in_production_and_post_processing_that_can_affect_data_quality
+      property: quality_check
+      description: Check the DOCUMENTATION tab.
+
+    - id: "4.3.2"
+      name: 4.3.2 Documentation must contain detailed information about methods, procedures and/or systems that have been implemented to optimize the accuracy and consistency of CDRs and ICDRs.
+      key: documentation_must_include_results_of_evaluations_by_the_originating_centres_and_or_third_parties_of_key_performance_indicators_for_their_seasonal_forecast_systems
+      property: quality_check
+      description: Check the DOCUMENTATION tab.
+
+    - id: "4.3.3"
+      name: 4.3.3 Documentation must contain results of quality assessments based on GCOS requirements carried out by producers and/or third parties.
+      key: documentation_must_contain_results_of_quality_assessments_based_on_gcos_requirements
+      property: quality_check
+      description: Check the DOCUMENTATION tab.
+
+    - id: "4.3.4"
+      name: 4.3.4 Reprocessed CDRs must be provided with documentation that includes a description of changes in algorithms and input observations as well as an assessment of resulting changes in key performance indicators.
+      key: implementation_of_new_system_versions_must_be_provided_with_a_description_of_significant_system_changes_as_well_as_an_assessment_of_changes_in_key_performance_indicators
+      property: quality_check
+      description: Check the DOCUMENTATION tab, in particular PQAR document.
+
+    - id: "comment_thread"
+      key: comment_thread
+      property: comment_thread
+      always_visible: true
+
+  - name: 4.4 User Guidance
+    key: "user_guidance"
+    properties:
+
+    - id: "user_guidance-qc"
+      name: "Quality check"
+      key: user_guidance_qc
+      property: auto_quality_check
+      description: Detailed information must be available to assist users in using the data.
+
+    - id: "4.4.1"
+      name: 4.4.1 A user guide must be available, addressing essential characteristics of CDRs and ECV products, including uncertainties and how they are represented in the dataset.
+      key: user_guidance_must_be_provided_on_essential_characteristics_of_seasonal_forecast_data_including_uncertainties_and_how_they_can_be_quantified
+      property: quality_check
+      description: Check the OVERVIEW and DOCUMENTATION tabs.
+
+    - id: "4.4.2"
+      name: 4.4.2 A description of known issues with the ECV products must be available.
+      key: a_description_of_known_issues_with_the_data_must_be_available
+      property: quality_check
+      description: Check for updates in the KNOWN ISSUES section  and the PUGs in the DOCUMENTATION tab.
+
+    - id: "4.4.4"
+      name: 4.4.4 A list of how-to articles for simple applications of the ECV products must be available.
+      key: examples_of_simple_applications_of_seasonal_forecast_data_must_be_available
+      property: quality_check
+      export: false
+      description: Check the DOCUMENTATION and OVERVIEW tabs.
+
+    - id: "comment_thread"
+      key: comment_thread
+      property: comment_thread
+      always_visible: true
+
+- name: Approve/Reject section
+  property: approve_reject_section
+  key: "approve_reject_section"
+  id: "approve_reject_section"

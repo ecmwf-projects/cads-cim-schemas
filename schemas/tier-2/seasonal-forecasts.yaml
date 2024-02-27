@@ -1,5 +1,5 @@
-name: Seasonal
-key: seasonal
+name: Seasonal Forecasts
+key: seasonal-forecasts
 properties:
 - name: Data Management
   key: "general"
