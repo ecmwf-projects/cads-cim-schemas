@@ -1,431 +1,301 @@
 name: In Situ
-key: in-situ
+key: "in-situ"
 properties:
-  - name: General
-    key: 'general'
+- name: "1. Data Management"
+  key: "key_1"
+  properties:
+  - id: "key_1-qc"
+    key: "key_1_qc"
+    name: "Quality check"
+    property: "auto_quality_check"
+    description: "Quality check"
+  - name: "1.1 Accuracy and Consistency: all information provided with the dataset must be consistent"
+    key: "key_1.1"
     properties:
-      - id: 'general-qc'
-        name: 'Quality check'
-        key: general_qc
-        property: quality_check
-      - name: Accuracy and Consistency
-        key: 'accuracy_and_consistency'
-        properties:
-          - id: 'accuracy_and_consistency-qc'
-            name: 'Quality check'
-            key: accuracy_and_consistency_qc
-            property: quality_check
-            description: All information provided with the dataset must be accurate and consistent.
-          - id: '1.1.1'
-            name: All information provided with the dataset must be accurate and consistent.
-            key: all_information_provided_with_the_dataset_must_be_accurate_and_consistent
-            property: catalogue_provided_field
-            description: Check the consistency and accuracy of the available information on CADS overview and documentation? tab with the dataset(s) of the catalogue.
-      - name: Reliable Access
-        key: 'reliable_access'
-        properties:
-          - id: 'reliable_access-qc'
-            name: 'Quality check'
-            key: reliable_access_qc
-            property: quality_check
-            description: Access to all information must be open, free and reliable.
-          - id: '1.2.1'
-            name: Access to all information must be open, free and reliable.
-            key: access_to_all_information_must_be_open_free_and_reliable
-            property: catalogue_provided_field
-            description: Check if all catalogue dataset is publicly available andaccessible as documented on CADS
-      - name: Versioning and Archiving
-        key: 'versioning_and_archiving'
-        properties:
-          - id: 'versioning_and_archiving-qc'
-            name: 'Quality check'
-            key: versioning_and_archiving_qc
-            property: quality_check
-            description: Adequate version control and archiving policies must be in place.
-          - id: '1.3.1'
-            name: Adequate version control and archiving policies must be in place.
-            key: adequate_version_control_and_archiving_policies_must_be_in_place
-            property: catalogue_provided_field
-            description: Check if all catalogue dataset versions are available as documented on CADS, and archiving policies, etc.
-      - id: 'comment_thread'
-        key: comment_thread
-        property: comment_thread
-        always_visible: true
-  - name: Data record
-    key: 'data_records'
+    - id: "key_1.1-qc"
+      key: "key_1.1_qc"
+      name: "Quality check"
+      property: "hidden_auto_quality_check"
+      description: "Quality check"
+    - id: "1.1.1"
+      key: "all_information_provided_with_the_dataset_must_be_accurate_and_consistent"
+      name: "1.1.1 All information provided with the dataset must be consistent and reflect the data in the catalogue entry"
+      property: "quality_check"
+      description: "The information in the Overview and Documentation is checked against the Download form, as well as the metadata in the files themselves (where appropriate)"
+  - name: "1.2 Reliable Access: access to all information must be open, free and reliable”"
+    key: "key_1.2"
     properties:
-      - id: 'data_records-qc'
-        name: 'Quality check'
-        key: data_records_qc
-        property: quality_check
-      - name: Consistency
-        key: 'consistency'
-        properties:
-          - id: 'consistency-qc'
-            name: 'Quality check'
-            key: consistency_qc
-            property: quality_check
-            description: The data must be complete and internally consistent.
-          - id: '2.1.1'
-            key: 'data_records_are_derived_from_the_output_of_a_regional_or_global_model_based_climate_reanalysis_system'
-            name: Data records are gridded ECV products derived from in-situ observations.
-            property: catalogue_provided_field
-            description: Please check if the data records are gridded data derived from in-situ observations
-          - id: '2.1.2'
-            key: 'data_records_contain_time_series_of_2_dimensional_or_3_dimensional_in_space_variables_in_uniform_time_steps'
-            name: The geographical domain for the ECV products is entirely well observed.
-            property: catalogue_provided_field
-            description: Please check if the contiguous region of data records is well observed
-          - id: '2.1.3'
-            name: Data records are available on space-time grid scales that are compatible with observation density and frequency.
-            key: data_records_are_available_on_space_time_grid_scales_that_are_compatible_with_observation_density_and_frequency
-            property: catalogue_provided_field
-            description: Please check the space-temporal coverage is uniform
-          - id: '2.1.4'
-            name: Observations used to generate the data records are subject to state-of-the-art quality control.
-            key: observations_used_to_generate_the_data_records_are_subject_to_state_of_the_art_quality_control
-            property: catalogue_provided_field
-            description: Please check if the observations to generate the data records are quality controlled.
-          - id: '2.1.5'
-            name: Data records are produced with methods and systems designed to capture climate variability and change.
-            key: data_records_are_produced_with_methods_and_systems_designed_to_capture_climate_variability_and_change
-            property: catalogue_provided_field
-            description: Please check if the data record could capture climate variability and change.
-          - id: '2.1.6'
-            name: data_records_are_produced_with_methods_and_systems_designed_to_capture_climate_variability_and_change.
-            key: data_records_are_produced_with_methods_and_systems_designed_to_capture_climate_variability_and_change
-            property: catalogue_provided_field
-            description: Please check if the algorithms to reprocess the data record is updated annually
-          - id: '2.1.7'
-            name: Data records contain time series of in-situ observations from land-based weather stations.
-            key: data_records_contain_time_series_of_in_situ_observations_from_land_based_weather_stations
-            property: catalogue_provided_field
-            description: Please check if the data records contain time series from land (marine) based stations
-          - id: '2.1.8'
-            name: Data records contain time series of in-situ observations from ships, buoys and other marine platforms.
-            key: data_records_contain_time_series_of_in_situ_observations_from_ships_buoys_and_other_marine_platforms
-            property: catalogue_provided_field
-            description: ''
-          - id: '2.1.9'
-            name: All observations included in the dataset have been subject to quality control and duplicate checks.
-            key: all_observations_included_in_the_dataset_have_been_subject_to_quality_control_and_duplicate_checks
-            property: catalogue_provided_field
-            description: Please check if the observations have bee quality controlled
-          - id: '2.1.10'
-            name: Observations collected from multiple data sources have been merged, removed or flagged as duplicates.
-            key: observations_collected_from_multiple_data_sources_have_been_merged_removed_or_flagged_as_duplicates
-            property: catalogue_provided_field
-            description: Please check if the observations have been collected from multiple data sources to have the timeseries.
-          - id: '2.1.11'
-            name: Where necessary, multiple time series have been reconciled into a single coherent time series.
-            key: where_necessary_multiple_time_series_have_been_reconciled_into_a_single_coherent_time_series
-            property: catalogue_provided_field
-            description: ''
-          - id: '2.1.12'
-            name: Data records use a common data model to represent all observations and their defining attributes.
-            key: data_records_use_a_common_data_model_to_represent_all_observations_and_their_defining_attributes
-            property: catalogue_provided_field
-            description: Please check if the data records use a common data model to represent all observations.
-          - id: '2.1.13'
-            name: All observations are linked to the originating data sources and data policies.
-            key: all_observations_are_linked_to_the_originating_data_sources_and_data_policies
-            property: catalogue_provided_field
-            description: Please check if all observations are linked to the original data sources and policies
-          - id: '2.1.14'
-            name: Data records are continuously updated with additional sources.
-            key: data_records_are_continuously_updated_with_additional_sources
-            property: catalogue_provided_field
-            description: Please check if the data records are continuously updated with additional observations.
-          - id: 'comment_thread'
-            key: comment_thread
-            property: comment_thread
-            always_visible: true
-      - name: Uncertainty
-        key: 'uncertainty'
-        properties:
-          - id: 'uncertainty-qc'
-            name: 'Quality check'
-            key: uncertainty_qc
-            property: quality_check
-            description: The data must include information about uncertainties.
-          - id: '2.2.1'
-            name: Estimates of uncertainty are provided for each ECV product in the dataset.
-            key: estimates_of_uncertainty_are_provided_for_each_ecv_product_in_the_dataset
-            property: catalogue_provided_field
-            description: Check if the uncertainty information is provided for each ECV production
-          - id: '2.2.2'
-            name: Quality indicators are provided for all observations included in the dataset.
-            key: quality_indicators_are_provided_for_all_observations_included_in_the_dataset
-            property: catalogue_provided_field
-            description: Please check if the quality indicators are provided
-          - id: 'comment_thread'
-            key: comment_thread
-            property: comment_thread
-            always_visible: true
-      - name: Updates
-        key: 'updates'
-        properties:
-          - id: 'updates-qc'
-            name: 'Quality check'
-            key: updates_qc
-            property: quality_check
-            description: Updates of the data records must be provided on a predictable schedule.
-          - id: '2.3.1'
-            name: Forward extensions of ECV products are updated on a fixed monthly schedule.
-            key: forward_extensions_of_ecv_products_are_updated_on_a_fixed_monthly_schedule
-            property: catalogue_provided_field
-            description: Please check the if the data records will be updated with a fixed monthly schedule.
-          - id: '2.3.2.1'
-            name: Availability of major upgrades to the dataset is  announced 3 months in advance.
-            key: availability_of_major_upgrades_to_the_dataset_is_announced_3_months_in_advance
-            property: catalogue_provided_field
-            description: Please check the if the availability of reprocessed ECV is announced 3 months in advance.
-          - id: '2.3.2.2'
-            name: Availability of major upgrades to the dataset is  announced 3 months in advance.
-            key: availability_of_major_upgrades_to_the_dataset_is_announced_3_months_in_advance
-            property: catalogue_provided_field
-            description: Please check the if the major updates availability is announced 3 months in advance.
-          - id: 'comment_thread'
-            key: comment_thread
-            property: comment_thread
-            always_visible: true
-  - name: Metadata
-    key: 'metadata'
+    - id: "key_1.2-qc"
+      key: "key_1.2_qc"
+      name: "Quality check"
+      property: "hidden_auto_quality_check"
+      description: "Quality check"
+    - id: "1.2.1"
+      key: "access_to_all_information_must_be_open_free_and_reliable"
+      name: "1.2.1 Access to all information must be open, free and reliable"
+      property: "quality_check"
+      description: "Data policy is checked in the documentation and terms of use/license. Reliability of data access is assessed via the CDS Catalogue uptime statistic (link), which should not be below 95% for longer than a week in the last 6 months [https://eqc.climate.copernicus.eu/monitoring#availability_dashboard;month-6]"
+      internal_description: "For the reliability check, do not look for catalogue-level KPIs, but only check the overall Catalogue status"
+  - name: "1.3 Versioning and Archiving: appropriate version control and archiving policies must be in place and documented"
+    key: "key_1.3"
     properties:
-      - id: 'metadata-qc'
-        name: 'Quality check'
-        key: metadata_qc
-        property: quality_check
-      - name: Discovery and Use
-        key: 'discovery_and_use'
-        properties:
-          - id: 'discovery_and_use-qc'
-            name: 'Quality check'
-            key: discovery_and_use_qc
-            property: quality_check
-            description: Metadata must include all necessary information for discovery and proper use of the data records.
-          - id: '3.1.1'
-            name: 'Metadata include: Data provenance; version; variable names and units; geolocation information; see list'
-            key: metadata_include_data_provenance_version_variable_names_and_units_geolocation_information_see_list
-            property: catalogue_provided_field
-            description: Check the metadata content contains all relevant information, such as, data provenance; version; variable names and units; geolocation information, etc. (Data checker can be used to perform the check)
-          - id: 'comment_thread'
-            key: comment_thread
-            property: comment_thread
-            always_visible: true
-      - name: Interoperability
-        key: 'interoperability'
-        properties:
-          - id: 'interoperability-qc'
-            name: 'Quality check'
-            key: interoperability_qc
-            property: quality_check
-            description: Metadata must comply with relevant international standards.
-          - id: '3.2.1'
-            name: Metadata implementation is consistent with the EU INSPIRE directive.
-            key: metadata_implementation_is_consistent_with_the_eu_inspire_directive
-            property: catalogue_provided_field
-            description: Please check if the metadata is consistent with INSPIRE directive
-          - id: '3.2.2'
-            name: Variable names comply with applicable NetCDF CF conventions.
-            key: variable_names_comply_with_applicable_net_cdf_cf_conventions
-            property: catalogue_provided_field
-            description: Please check the variable names in the metadata file are complying with the NetCDF4-CF convention or not. (data checker can be used to perform the check)
-          - id: '3.2.3'
-            name: Descriptions of ECVs and ECV products are consistent with GCOS-245.
-            key: descriptions_of_ec_vs_and_ecv_products_are_consistent_with_gcos_245
-            property: catalogue_provided_field
-            description: Pleae check if the descriptions of ECV are consistent with GCOS-245
-          - id: '3.2.4'
-            name: Data and metadata are available in the NetCDF4 format.
-            key: data_and_metadata_are_available_in_the_net_cdf_4_format
-            property: catalogue_provided_field
-            description: Check if the data and metadata are available in the NetCDF4 format.
-          - id: '3.2.5.1'
-            name: A DOI is associated with the dataset.
-            key: a_doi_is_associated_with_the_dataset
-            property: catalogue_provided_field
-            description: Please check the existence of DOI for the climate projections product/dataset produced by originating centres? (EQC will put a flag indicating that there are two DOIs, if this is the case)
-          - id: '3.2.5.2'
-            name: A DOI is associated with the dataset.
-            key: a_doi_is_associated_with_the_dataset
-            property: catalogue_provided_field
-            description: Please check if the observation data is available in CSV format.
-          - id: '3.2.6'
-            name: Observation data are available in text format with comma-separated values (CSV) or NetCDF4 formats.
-            key: observation_data_are_available_in_text_format_with_comma_separated_values_csv_or_net_cdf_4_formats
-            property: catalogue_provided_field
-            description: Please check the existence of DOI (EQC will put a flag indicating that there are two DOIs, if this is the case)
-          - id: 'comment_thread'
-            key: comment_thread
-            property: comment_thread
-            always_visible: true
-  - name: Documentation
-    key: 'documentation'
+    - id: "key_1.3-qc"
+      key: "key_1.3_qc"
+      name: "Quality check"
+      property: "hidden_auto_quality_check"
+      description: "Quality check"
+    - id: "1.3.1"
+      key: "adequate_version_control_and_archiving_policies_must_be_in_place"
+      name: "1.3.1 Appropriate version control and archiving policies must be in place and documented"
+      property: "quality_check"
+      description: "Dataset version availability, and documentation of the  policies, are checked"
+  - id: "comment_thread"
+    key: "comment_thread"
+    name: "Comment thread"
+    property: "comment_thread"
+- name: "2. Data Records"
+  key: "key_2"
+  properties:
+  - id: "key_2-qc"
+    key: "key_2_qc"
+    name: "Quality check"
+    property: "auto_quality_check"
+    description: "Quality check"
+  - name: "2.1 Consistency: the data must be complete and internally consistent"
+    key: "key_2.1"
     properties:
-      - id: 'documentation-qc'
-        name: 'Quality check'
-        key: documentation_qc
-        property: quality_check
-      - name: Content
-        key: 'content'
-        properties:
-          - id: 'content-qc'
-            name: 'Quality check'
-            key: content_qc
-            property: quality_check
-            description: The content of data records must be fully documented.
-          - id: '4.1.1'
-            name: Documentation includes a general overview of the ECV products included, their primary use, and the observing networks they are derived from.
-            key: documentation_includes_a_general_overview_of_the_ecv_products_included_their_primary_use_and_the_observing_networks_they_are_derived_from
-            property: catalogue_provided_field
-            description: Please check the if available documentation on CADS is sufficiently provide the general overview of the ECV productions, their primary use and the observing networks they are derived from.
-          - id: '4.1.2'
-            name: Documentation includes a detailed description of all data records contained in the dataset, their spatial coverage and resolution, temporal coverage and resolution, data update frequencies, etc.
-            key: documentation_includes_a_detailed_description_of_all_data_records_contained_in_the_dataset_their_spatial_coverage_and_resolution_temporal_coverage_and_resolution_data_update_frequencies_etc
-            property: catalogue_provided_field
-            description: Please check the available documentation on CADS provide detailed description of all data records, spatial and temporal coverage, resolution, data updates frequencies.
-          - id: '4.1.3'
-            name: Documentation addresses data provenance, data licenses, digital object identifiers (doi), and key references for the dataset.
-            key: documentation_addresses_data_provenance_data_licenses_digital_object_identifiers_doi_and_key_references_for_the_dataset
-            property: catalogue_provided_field
-            description: Please check if the available documentation of the climate projections CADS contains all required information about the data producers, originating centre, system versions, data licenses, digital object identifiers (doi), key references.
-          - id: '4.1.4'
-            name: Documentation includes a general overview of the observation data included, and the primary purpose of the dataset.
-            key: documentation_includes_a_general_overview_of_the_observation_data_included_and_the_primary_purpose_of_the_dataset
-            property: catalogue_provided_field
-            description: Please check the if available documentation on CADS (only or also externally?) are sufficiently provide the general overview of the data records and their primary use
-          - id: '4.1.5'
-            name: Documentation includes a complete list of observing systems and data sources represented in the dataset.
-            key: documentation_includes_a_complete_list_of_observing_systems_and_data_sources_represented_in_the_dataset
-            property: catalogue_provided_field
-            description: Please check the if available documentation on CADS  includes a complete list of observing systems and data sources
-          - id: '4.1.6'
-            name: Documentation includes detailed information about observation data coverage in space and time.
-            key: documentation_includes_detailed_information_about_observation_data_coverage_in_space_and_time
-            property: catalogue_provided_field
-            description: Please check the if available documentation on CADS includes data coverage  in space and time
-          - id: '4.1.7'
-            name: Documentation includes a detailed description of the common data model used to store observations data.
-            key: documentation_includes_a_detailed_description_of_the_common_data_model_used_to_store_observations_data
-            property: catalogue_provided_field
-            description: Please check the if available documentation on CADS  includes the common model used to store the observation data
-          - id: 'comment_thread'
-            key: comment_thread
-            property: comment_thread
-            always_visible: true
-      - name: Scientific Basis
-        key: 'scientific_basis'
-        properties:
-          - id: 'scientific_basis-qc'
-            name: 'Quality check'
-            key: scientific_basis_qc
-            property: quality_check
-            description: The scientific methodology used to produce the data must be fully documented.
-          - id: '4.2.1'
-            name: The scientific basis for the ECV products contained in the dataset must be documented in peer-reviewed publications.
-            key: the_scientific_basis_for_the_ecv_products_contained_in_the_dataset_must_be_documented_in_peer_reviewed_publications
-            property: catalogue_provided_field
-            description: Please check if there is publicly available peer-reviewed publications on the scientific basis of the ECV.
-          - id: '4.2.2'
-            name: The observing networks and estimation algorithms used to generate the ECV products must be fully documented.
-            key: the_observing_networks_and_estimation_algorithms_used_to_generate_the_ecv_products_must_be_fully_documented
-            property: catalogue_provided_field
-            description: Please check if the algorithms used to generate the ECV is fully documented.
-          - id: '4.2.3'
-            name: Documentation of methods used to merge and harmonize data from multiple sources must be available.
-            key: documentation_of_methods_used_to_merge_and_harmonize_data_from_multiple_sources_must_be_available
-            property: catalogue_provided_field
-            description: Please check if there is publicly available peer-reviewed publications on the method to merge and harmonise the data
-          - id: 'comment_thread'
-            key: comment_thread
-            property: comment_thread
-            always_visible: true
-      - name: Quality Control
-        key: quality_control
-        properties:
-          - id: 'quality_control-qc'
-            name: 'Quality check'
-            key: quality_control_qc
-            property: quality_check
-            description: Quality control and validation activities must be fully documented.
-          - id: '4.3.1'
-            name: Documentation must contain detailed information about the use of input observations, including data selection, quality control steps and bias adjustments.
-            key: documentation_must_contain_detailed_information_about_the_use_of_input_observations_including_data_selection_quality_control_steps_and_bias_adjustments
-            property: catalogue_provided_field
-            description: Please check if the documentation contains quality control, bias adjustment, data selection.
-          - id: '4.3.2'
-            name: Documentation must contain detailed information about methods, procedures and/or systems that have been implemented to optimize the accuracy and consistency of the ECV products.
-            key: documentation_must_contain_detailed_information_about_methods_procedures_and_or_systems_that_have_been_implemented_to_optimize_the_accuracy_and_consistency_of_the_ecv_products
-            property: catalogue_provided_field
-            description: Please check if the documentation contains the methods, procedures used to optimize the accuracy and consistency of the ECV products.
-          - id: '4.3.3'
-            name: Documentation must contain results of quality assessments of the ECV products carried out by producers and/or third parties.
-            key: documentation_must_contain_results_of_quality_assessments_of_the_ecv_products_carried_out_by_producers_and_or_third_parties
-            property: catalogue_provided_field
-            description: Please check if the documentation contains the quality assessments results.
-          - id: '4.3.4'
-            name: Reprocessed ECV products must be provided with documentation that includes a description of changes in algorithms and input observations as well as an assessment of resulting changes in key performance indicators.
-            key: reprocessed_ecv_products_must_be_provided_with_documentation_that_includes_a_description_of_changes_in_algorithms_and_input_observations_as_well_as_an_assessment_of_resulting_changes_in_key_performance_indicators
-            property: catalogue_provided_field
-            description: Please check if the change of the algorithms of the reprocessed ECV is documented including also the assessment of the resulting changes in the key performance indicators.
-          - id: '4.3.5'
-            name: Detailed information about selection of input data and sources, quality control steps and duplication detection must be available.
-            key: detailed_information_about_selection_of_input_data_and_sources_quality_control_steps_and_duplication_detection_must_be_available
-            property: catalogue_provided_field
-            description: Please check if the documentation contains input data, and quality control procedure.
-          - id: '4.3.6'
-            name: Documentation must explain potential sources of error for different observation methods.
-            key: documentation_must_explain_potential_sources_of_error_for_different_observation_methods
-            property: catalogue_provided_field
-            description: Please check if the documentation contains the explanation of the potential sources of errors.
-          - id: '4.3.7'
-            name: New versions of the dataset must be provided with documentation that includes a description of changes in algorithms and input data sources.
-            key: new_versions_of_the_dataset_must_be_provided_with_documentation_that_includes_a_description_of_changes_in_algorithms_and_input_data_sources
-            property: catalogue_provided_field
-            description: Please check if the documentation contains the information about the new versions of the data including the changes in algorithms and input data.
-          - id: 'comment_thread'
-            key: comment_thread
-            property: comment_thread
-            always_visible: true
-      - name: User Guidance
-        key: 'user_guidance'
-        properties:
-          - id: 'user_guidance-qc'
-            name: 'Quality check'
-            key: user_guidance_qc
-            property: quality_check
-            description: Detailed information must be available to assist users in using the data.
-          - id: '4.4.1'
-            name: A user guide must be available, addressing essential characteristics of the ECV products, including uncertainties and how they are represented in the dataset.
-            key: a_user_guide_must_be_available_addressing_essential_characteristics_of_the_ecv_products_including_uncertainties_and_how_they_are_represented_in_the_dataset
-            property: catalogue_provided_field
-            description: Please check if there is User guidance available, and address the essential characteristics of the model output, including uncertainties and how they can be quantified.
-          - id: '4.4.2'
-            name: A description of known issues with the data records must be available.
-            key: a_description_of_known_issues_with_the_data_records_must_be_available
-            property: catalogue_provided_field
-            description: Please check if all of the known issues of the climate projections product are publicly available and well described on CADS.
-          - id: '4.4.3'
-            name: User Support for use of the data records must be available.
-            key: user_support_for_use_of_the_data_records_must_be_available
-            property: catalogue_provided_field
-            description: Please check if there is a User support platform or so is available for climate projections product on CADS.
-          - id: '4.4.4'
-            name: A list of examples of applications of the data records must be available.
-            key: a_list_of_examples_of_applications_of_the_data_records_must_be_available
-            property: catalogue_provided_field
-            description: Please check if there is a list of how to articles.
-          - id: '4.4.5'
-            name: A user guide must be available, addressing essential characteristics of the observation data and how they are represented in the common data model used for the dataset.
-            key: a_user_guide_must_be_available_addressing_essential_characteristics_of_the_observation_data_and_how_they_are_represented_in_the_common_data_model_used_for_the_dataset
-            property: catalogue_provided_field
-            description: Please check if there is User guidance available, and address the essential characteristics of the observation data, and how represented in the common data model
-          - id: 'comment_thread'
-            key: comment_thread
-            property: comment_thread
-            always_visible: true
-  - name: Approve/Reject section
-    property: approve_reject_section
-    key: 'approve_reject_section'
-    id: 'approve_reject_section'
+    - id: "key_2.1-qc"
+      key: "key_2.1_qc"
+      name: "Quality check"
+      property: "auto_quality_check"
+      description: "Quality check"
+    - id: "2.1.1"
+      key: "data_records_are_derived_from_the_output_of_a_regional_or_global_model_based_climate_reanalysis_system"
+      name: "2.1.1 Data records are available on space-time resolution compatible with that input observations"
+      property: "quality_check"
+      description: "The resolution of the data records is checked in the Documentation"
+      internal_description: "The resolution of the input data and those in the CDS are checked from the Documentation (if applicable)"
+    - id: "2.1.2"
+      key: "data_records_contain_time_series_of_2_dimensional_or_3_dimensional_in_space_variables_in_uniform_time_steps"
+      name: "2.1.2 Data records are available with spatio-temporal coverage and density suitable to capture climate variability and change"
+      property: "quality_check"
+      description: "The requirements of basic accuracy, precision, stability and completeness (including sufficient length) are checked in the Documentation"
+      internal_description: "the information should be found in the Documentation. The result is 'not met' if the information is not available, 'partially met' if the information is available but requirements are not fulfilled, 'fully met' otherwise"
+    - id: "2.1.3"
+      key: "data_records_are_available_on_space_time_grid_scales_that_are_compatible_with_observation_density_and_frequency"
+      name: "2.1.3 Data records are reprocessed periodically using improved algorithms and/or newly available observations"
+      property: "quality_check"
+      description: "The periodical reprocessing of the dataset, by means of ingestion of new data or improved algorithms, is checked in the Documentation"
+    - id: "2.1.4"
+      key: "observations_used_to_generate_the_data_records_are_subject_to_state_of_the_art_quality_control"
+      name: "2.1.4 Observations collected from multiple data sources have been merged, removed or flagged as duplicates"
+      property: "quality_check"
+      description: "The method used to combine and filter multiple data sources is checked in the Documentation"
+    - id: "comment_thread"
+      key: "comment_thread"
+      name: "Comment thread"
+      property: "comment_thread"
+  - name: "2.2 Uncertainty: the data must include information about uncertainties"
+    key: "key_2.2"
+    properties:
+    - id: "key_2.2-qc"
+      key: "key_2.2_qc"
+      name: "Quality check"
+      property: "hidden_auto_quality_check"
+      description: "Quality check"
+    - id: "2.2.1"
+      key: "estimates_of_uncertainty_are_provided_for_each_ecv_product_in_the_dataset"
+      name: "2.2.1 Estimates of uncertainty are provided for each ECV product in the dataset, in terms of random and correlated uncertainty"
+      property: "quality_check"
+      description: "The availability of uncertainty information as an ancillary layer is checked for a data sample"
+      internal_description: "data sample comprises a few randomly selected files for different years and variables. Uncertainty can be e.g. provided with ensemble spread"
+  - name: "2.3 Updates: updates of the data records must be provided on a regular schedule"
+    key: "key_2.3"
+    properties:
+    - id: "key_2.3-qc"
+      key: "key_2.3_qc"
+      name: "Quality check"
+      property: "hidden_auto_quality_check"
+      description: "Quality check"
+    - id: "2.3.1"
+      key: "forward_extensions_of_ecv_products_are_updated_on_a_fixed_monthly_schedule"
+      name: "2.3.1 Forward-in-time extensions of the data records are updated on a regular schedule"
+      property: "quality_check"
+      description: "The consistency of the information on the update schedule (when applicable) is verified across the Documentation, Overview and the Download form"
+      internal_description: "where possible, perform data availability checks by downloading data around the nominal update times"
+  - id: "comment_thread"
+    key: "comment_thread"
+    name: "Comment thread"
+    property: "comment_thread"
+- name: "3. Metadata"
+  key: "key_3"
+  properties:
+  - id: "key_3-qc"
+    key: "key_3_qc"
+    name: "Quality check"
+    property: "auto_quality_check"
+    description: "Quality check"
+  - name: "3.1 Discovery and Use: metadata must include all necessary information for discovery and proper use of the data records"
+    key: "key_3.1"
+    properties:
+    - id: "key_3.1-qc"
+      key: "key_3.1_qc"
+      name: "Quality check"
+      property: "hidden_auto_quality_check"
+      description: "Quality check"
+    - id: "3.1.1"
+      key: "metadata_include_data_provenance_version_variable_names_and_units_geolocation_information_see_list"
+      name: "3.1.1 Metadata include: data provenance; version; variable names and units; geolocation information; time information, producers, contact information"
+      property: "quality_check"
+      description: "Metadata content for a data sample is checked for the required information"
+      internal_description: "data sample comprises a few randomly selected files for different years and variables"
+  - name: "3.2 Interoperability: metadata must comply with relevant international standards"
+    key: "key_3.2"
+    properties:
+    - id: "key_3.2-qc"
+      key: "key_3.2_qc"
+      name: "Quality check"
+      property: "auto_quality_check"
+      description: "Quality check"
+    - id: "3.2.1"
+      key: "metadata_implementation_is_consistent_with_the_eu_inspire_directive"
+      name: "3.2.1 Metadata comply with applicable NetCDF CF conventions"
+      property: "quality_check"
+      description: "The convention compliance for a data sample is checked (if applicable)"
+      internal_description: "data sample comprises a few randomly selected files for different years and variables. Evaluators can use this tool: https://cfconventions.org/software.html"
+    - id: "3.2.2"
+      key: "variable_names_comply_with_applicable_net_cdf_cf_conventions"
+      name: "3.2.2 Data and metadata are available in the NetCDF4 or textual (such as comma-separated) formats"
+      property: "quality_check"
+      description: "The format compliance for a data sample is checked (if applicable)"
+      internal_description: "data sample comprises a few randomly selected files for different years and variables"
+    - id: "comment_thread"
+      key: "comment_thread"
+      name: "Comment thread"
+      property: "comment_thread"
+  - id: "comment_thread"
+    key: "comment_thread"
+    name: "Comment thread"
+    property: "comment_thread"
+- name: "4. Documentation"
+  key: "key_4"
+  properties:
+  - id: "key_4-qc"
+    key: "key_4_qc"
+    name: "Quality check"
+    property: "auto_quality_check"
+    description: "Quality check"
+  - name: "4.1 Content: the content of data records must be fully documented"
+    key: "key_4.1"
+    properties:
+    - id: "key_4.1-qc"
+      key: "key_4.1_qc"
+      name: "Quality check"
+      property: "auto_quality_check"
+      description: "Quality check"
+    - id: "4.1.1"
+      key: "documentation_includes_a_general_overview_of_the_ecv_products_included_their_primary_use_and_the_observing_networks_they_are_derived_from"
+      name: "4.1.1 Documentation includes a general overview of the ECV products included, their primary use, and the observing networks they are derived from"
+      property: "quality_check"
+      description: "The Overview and Documentation are checked for the required information"
+    - id: "4.1.2"
+      key: "documentation_includes_a_detailed_description_of_all_data_records_contained_in_the_dataset_their_spatial_coverage_and_resolution_temporal_coverage_and_resolution_data_update_frequencies_etc"
+      name: "4.1.2 Documentation must include a detailed description of all data records contained in the dataset, their data processing levels , spatial coverage and resolution, temporal coverage and resolution, and data update frequencies"
+      property: "quality_check"
+      description: "The Documentation is checked for the required information"
+    - id: "4.1.3"
+      key: "documentation_addresses_data_provenance_data_licenses_digital_object_identifiers_doi_and_key_references_for_the_dataset"
+      name: "4.1.3 Documentation addresses data provenance, data licenses, digital object identifiers (doi), and key references for the dataset"
+      property: "quality_check"
+      description: "The Documentation is checked for the required information"
+    - id: "4.1.4"
+      key: "documentation_includes_a_general_overview_of_the_observation_data_included_and_the_primary_purpose_of_the_dataset"
+      name: "4.1.4 Documentation includes a complete list of observing systems and data sources represented in the dataset"
+      property: "quality_check"
+      description: "The Documentation is checked for the required information"
+    - id: "comment_thread"
+      key: "comment_thread"
+      name: "Comment thread"
+      property: "comment_thread"
+  - name: "4.2 Scientific Basis: the scientific methodology used to produce the data must be fully documented"
+    key: "key_4.2"
+    properties:
+    - id: "key_4.2-qc"
+      key: "key_4.2_qc"
+      name: "Quality check"
+      property: "auto_quality_check"
+      description: "Quality check"
+    - id: "4.2.1"
+      key: "the_scientific_basis_for_the_ecv_products_contained_in_the_dataset_must_be_documented_in_peer_reviewed_publications"
+      name: "4.2.1 The scientific basis for the ECV products contained in the dataset must be documented in peer-reviewed publications"
+      property: "quality_check"
+      description: "The Documentation is checked for the required information"
+    - id: "4.2.2"
+      key: "the_observing_networks_and_estimation_algorithms_used_to_generate_the_ecv_products_must_be_fully_documented"
+      name: "4.2.2 The observing networks and estimation algorithms used to generate the ECV products must be fully documented"
+      property: "quality_check"
+      description: "The Documentation is checked for the required information"
+    - id: "comment_thread"
+      key: "comment_thread"
+      name: "Comment thread"
+      property: "comment_thread"
+  - name: "4.3 Quality Control: quality control and validation activities must be fully documented"
+    key: "key_4.3"
+    properties:
+    - id: "key_4.3-qc"
+      key: "key_4.3_qc"
+      name: "Quality check"
+      property: "auto_quality_check"
+      description: "Quality check"
+    - id: "4.3.1"
+      key: "documentation_must_contain_detailed_information_about_the_use_of_input_observations_including_data_selection_quality_control_steps_and_bias_adjustments"
+      name: "4.3.1 Documentation must contain detailed information about the use of input observations, including data selection, quality control steps"
+      property: "quality_check"
+      description: "The Documentation is checked for the required information"
+    - id: "4.3.2"
+      key: "documentation_must_contain_detailed_information_about_methods_procedures_and_or_systems_that_have_been_implemented_to_optimize_the_accuracy_and_consistency_of_the_ecv_products"
+      name: "4.3.2 Documentation must contain detailed information about methods, procedures and/or systems that have been implemented to optimize the quality of the ECV products"
+      property: "quality_check"
+      description: "The Documentation is checked for the required information"
+    - id: "4.3.3"
+      key: "documentation_must_contain_results_of_quality_assessments_of_the_ecv_products_carried_out_by_producers_and_or_third_parties"
+      name: "4.3.3 Documentation must contain results of quality assessments of the ECV products carried out by producers and/or third parties"
+      property: "quality_check"
+      description: "The Documentation is checked for the required information"
+    - id: "4.3.4"
+      key: "reprocessed_ecv_products_must_be_provided_with_documentation_that_includes_a_description_of_changes_in_algorithms_and_input_observations_as_well_as_an_assessment_of_resulting_changes_in_key_performance_indicators"
+      name: "4.3.4 Reprocessed ECV products must be provided with documentation that includes a description of changes in algorithms and input observations as well as an assessment of resulting changes in key performance indicators"
+      property: "quality_check"
+      description: "The Documentation is checked for the required information"
+    - id: "comment_thread"
+      key: "comment_thread"
+      name: "Comment thread"
+      property: "comment_thread"
+  - name: "4.4 User Guidance: detailed information must be available to assist users in using the data"
+    key: "key_4.4"
+    properties:
+    - id: "key_4.4-qc"
+      key: "key_4.4_qc"
+      name: "Quality check"
+      property: "auto_quality_check"
+      description: "Quality check"
+    - id: "4.4.1"
+      key: "a_user_guide_must_be_available_addressing_essential_characteristics_of_the_ecv_products_including_uncertainties_and_how_they_are_represented_in_the_dataset"
+      name: "4.4.1 A user guide must be available, addressing essential characteristics of the ECV products, including uncertainties and how they are represented in the dataset"
+      property: "quality_check"
+      description: "The Overview and Documentation are checked for the required information"
+      internal_description: "evaluators are only required to verify the availability of the Documentation"
+    - id: "4.4.2"
+      key: "a_description_of_known_issues_with_the_data_records_must_be_available"
+      name: "4.4.2 A description of known issues with the data records must be available"
+      property: "quality_check"
+      description: "The Documentation is checked for the required information"
+      internal_description: "evaluators should inspect in particular the Known issues list"
+    - id: "comment_thread"
+      key: "comment_thread"
+      name: "Comment thread"
+      property: "comment_thread"
+  - id: "comment_thread"
+    key: "comment_thread"
+    name: "Comment thread"
+    property: "comment_thread"
