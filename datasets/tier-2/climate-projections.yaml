@@ -1,30 +1,32 @@
 datasets:
-- key: in-situ
+- key: climate-projections
   catalogue_entries:
   - key: "all"
     groups:
     - All
-  - key: insitu-gridded-observations-europe
+  - key: projections-cmip6
     groups:
-    - A
+    - cmip6
     - All
-  - key: insitu-gridded-observations-alpine-precipitation
+  - key: projections-cmip5-daily-single-levels
     groups:
-    - A
+    - cmip5
     - All
-  - key: insitu-gridded-observations-nordic
+  - key: projections-cmip5-daily-pressure-levels
     groups:
-    - A
+    - cmip5
     - All
-  - key: insitu-observations-surface-land
+  - key: projections-cmip5-monthly-single-levels
     groups:
-    - 4
-    - B
+    - cmip5
     - All
-  - key: insitu-observations-surface-marine
+  - key: projections-cmip5-monthly-pressure-levels
     groups:
-    - 5
-    - B
+    - cmip5
+    - All
+  - key: projections-cordex-domains-single-levels
+    groups:
+    - cordex
     - All
   forms:
   # General
@@ -50,127 +52,83 @@ datasets:
     - 2.1.2
     - 2.1.3
     - 2.1.4
+    groups:
+    - cmip6
+  - fields:
     - 2.1.5
     - 2.1.6
-    groups:
-    - A
-  - fields:
     - 2.1.7
-    groups:
-    - 4
-  - fields:
     - 2.1.8
     groups:
-    - 5
+    - cmip5
   - fields:
     - 2.1.9
     - 2.1.10
+    - 2.1.11
     - 2.1.12
     - 2.1.13
-    - 2.1.14
     groups:
-    - B
-  - fields:
-    - 2.1.11
-    groups:
-    - 4
+    - cordex
   # Uncertainty
   - fields:
     - 2.2.1
     groups:
-    - A
-  - fields:
-    - 2.2.2
-    groups:
-    - B
+    - All
   # Updates
   - fields:
     - 2.3.1
     groups:
-    - A
-  - fields:
-    - 2.3.2.1
-    groups:
-    - A
-  - fields:
-    - 2.3.2.2
-    groups:
-    - B
+    - All
   # Metadata
   # Discovery and Use
   - fields:
     - 3.1.1
     groups:
-    - A
+    - All
   # Interoperability
   - fields:
     - 3.2.1
     - 3.2.2
     - 3.2.3
     - 3.2.4
-    - 3.2.5.1
     groups:
-    - A
-  - fields:
-    - 3.2.5.2
-    - 3.2.6
-    groups:
-    - B
+    - All
   # Documentation
   # Content
   - fields:
     - 4.1.1
-    - 4.1.1
+    - 4.1.2
     - 4.1.3
     groups:
-    - A
-  - fields:
-    - 4.1.4
-    - 4.1.5
-    - 4.1.6
-    - 4.1.7
-    groups:
-    - B
+    - All
   # Scientific Basis
   - fields:
     - 4.2.1
     - 4.2.2
     groups:
-    - A
-  - fields:
-    - 4.2.3
-    groups:
-    - B
+    - All
   # Quality Control
   - fields:
     - 4.3.1
-    - 4.3.2
-    - 4.3.3
-    - 4.3.4
     groups:
-    - A
+    - cmip6
   - fields:
-    - 4.3.5
-    - 4.3.6
-    - 4.3.7
+    - 4.3.2
     groups:
-    - B
+    - cmip5
+  - fields:
+    - 4.3.3
+    groups:
+    - cordex
   # User Guidance
   - fields:
     - 4.4.1
-    groups:
-    - A
-  - fields:
     - 4.4.2
     - 4.4.3
     - 4.4.4
     groups:
     - All
-  - fields:
-    - 4.4.5
-    groups:
-    - B
-    # Quality checks
+  # Quality checks
   - fields:
     - "key_1-qc"
     - "key_1.1-qc"
@@ -189,8 +147,6 @@ datasets:
     - "comment_thread"
     - "key_2.2-qc"
     - "2.2.1"
-    - "key_2.3-qc"
-    - "2.3.1"
     - "comment_thread"
     - "key_3-qc"
     - "key_3.1-qc"
@@ -198,6 +154,7 @@ datasets:
     - "key_3.2-qc"
     - "3.2.1"
     - "3.2.2"
+    - "3.2.3"
     - "comment_thread"
     - "comment_thread"
     - "key_4-qc"
@@ -205,7 +162,6 @@ datasets:
     - "4.1.1"
     - "4.1.2"
     - "4.1.3"
-    - "4.1.4"
     - "comment_thread"
     - "key_4.2-qc"
     - "4.2.1"
@@ -213,13 +169,11 @@ datasets:
     - "comment_thread"
     - "key_4.3-qc"
     - "4.3.1"
-    - "4.3.2"
-    - "4.3.3"
-    - "4.3.4"
-    - "comment_thread"
     - "key_4.4-qc"
     - "4.4.1"
     - "4.4.2"
+    - "4.4.3"
+    - "4.4.4"
     - "comment_thread"
     - "comment_thread"
     groups:

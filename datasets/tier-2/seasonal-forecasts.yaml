@@ -1,6 +1,9 @@
 datasets:
 - key: all
   catalogue_entries:
+  - key: "all"
+    groups:
+    - All
   - key: sis-hydrology-variables-derived-seasonal-forecast
     groups:
     - All

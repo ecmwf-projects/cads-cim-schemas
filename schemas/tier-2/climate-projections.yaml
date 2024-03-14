@@ -1,5 +1,5 @@
 name: Climate projections
-key: 'climate_projections'
+key: 'climate-projections'
 properties:
 - name: "1. Data Management"
   key: "key_1"
