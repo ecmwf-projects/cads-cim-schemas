@@ -225,7 +225,7 @@ properties:
       description: "The common metadata from grib and netcdf sample files were compared for a data sample."
     - id: "3.2.3"
       key: "a_doi_is_associated_with_the_dataset"
-      name: "3.2.3  A DOI is associated with the dataset."
+      name: "3.2.3 A DOI is associated with the dataset."
       property: "quality_check"
       description: "The availability of a DOI on the CDS overview page was checked."
     - id: "comment_thread"
