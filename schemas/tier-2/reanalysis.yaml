@@ -9,7 +9,7 @@ properties:
     name: "Quality check"
     property: "auto_quality_check"
     description: "Quality check"
-  - name: "1.1 Accuracy and Consistency: all information provided with the dataset must be consistent"
+  - name: "1.1 Accuracy and Consistency: all information provided with the dataset must be consistent and reflect the data in the catalogue entry"
     key: "key_1.1"
     properties:
     - id: "key_1.1-qc"

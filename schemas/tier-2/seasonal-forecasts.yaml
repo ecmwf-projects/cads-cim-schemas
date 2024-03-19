@@ -9,7 +9,7 @@ properties:
     name: "Quality check"
     property: "auto_quality_check"
     description: "Quality check"
-  - name: "1.1 Accuracy and Consistency: all information provided with the dataset must be consistent"
+  - name: "1.1 Accuracy and Consistency: all information provided with the dataset must be consistent and reflect the data in the catalogue entry"
     key: "key_1.1"
     properties:
     - id: "key_1.1-qc"
@@ -217,7 +217,7 @@ properties:
       key: "metadata_implementation_is_consistent_with_the_eu_inspire_directive"
       name: "3.2.1 NetCDF Metadata comply with applicable NetCDF CF conventions"
       property: "quality_check"
-      description: "The variable names in sample tests were compared to the NetCDF CF naming conventions (link). Other aspects of the metadata were not checked. [ https://cfconventions.org/ ]"
+      description: "The variable names in sample tests were compared to the NetCDF CF naming conventions (https://cfconventions.org). Other aspects of the metadata were not checked."
     - id: "3.2.3"
       key: "a_doi_is_associated_with_the_dataset"
       name: "3.2.3  A DOI is associated with the dataset."
