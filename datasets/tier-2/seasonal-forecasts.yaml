@@ -1,0 +1,93 @@
+datasets:
+- key: all
+  catalogue_entries:
+  - key: "all"
+    groups:
+    - All
+  - key: sis-hydrology-variables-derived-seasonal-forecast
+    groups:
+    - All
+  - key: cems-glofas-seasonal
+    groups:
+    - All
+  - key: efas-seasonal
+    groups:
+    - All
+  - key: seasonal-monthly-pressure-levels
+    groups:
+    - All
+  - key: seasonal-postprocessed-pressure-levels
+    groups:
+    - All
+  - key: seasonal-postprocessed-single-levels
+    groups:
+    - All
+  - key: seasonal-monthly-single-levels
+    groups:
+    - All
+  - key: seasonal-original-pressure-levels
+    groups:
+    - All
+  - key: seasonal-original-single-levels
+    groups:
+    - All
+  - key: sis-hydrology-variables-derived-seasonal-reforecast
+    groups:
+    - All
+  forms:
+  - fields:
+    - "key_1-qc"
+    - "key_1.1-qc"
+    - "1.1.1"
+    - "key_1.2-qc"
+    - "1.2.1"
+    - "key_1.3-qc"
+    - "1.3.1"
+    - "key_2-qc"
+    - "key_2.1-qc"
+    - "2.1.1"
+    - "2.1.2"
+    - "2.1.3"
+    - "2.1.4"
+    - "2.1.5"
+    - "2.1.6"
+    - "2.1.7"
+    - "2.1.8"
+    - "2.1.9"
+    - "key_2.2-qc"
+    - "2.2.1"
+    - "2.2.2"
+    - "2.2.3"
+    - "key_2.3-qc"
+    - "2.3.1"
+    - "2.3.2"
+    - "2.3.3"
+    - "key_3-qc"
+    - "key_3.1-qc"
+    - "3.1.1"
+    - "3.1.2"
+    - "key_3.2-qc"
+    - "3.2.1"
+    - "3.2.3"
+    - "key_4-qc"
+    - "key_4.1-qc"
+    - "4.1.1"
+    - "4.1.2"
+    - "4.1.3"
+    - "key_4.2-qc"
+    - "4.2.1"
+    - "4.2.2"
+    - "4.2.3"
+    - "4.2.4"
+    - "key_4.3-qc"
+    - "4.3.1"
+    - "4.3.2"
+    - "4.3.3"
+    - "key_4.4-qc"
+    - "4.4.1"
+    - "4.4.2"
+    - "4.4.3"
+    - "4.4.4"
+    - "comment_thread"
+    groups:
+    - All

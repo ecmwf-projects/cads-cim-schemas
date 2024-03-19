@@ -3,8 +3,6 @@
   "required": ["quality_check"],
   "properties": {
     "quality_check": {
-      "title": "{{title}}",
-      "description": "{{description}}",
       "type": "string"
     }
   }
