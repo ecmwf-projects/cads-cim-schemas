@@ -1,0 +1,141 @@
+datasets:
+- key: all
+  catalogue_entries:
+  - key: "all"
+    groups:
+    - All
+  - key: satellite-sea-ice-concentration
+    groups:
+    - All
+  - key: satellite-sea-ice-edge-type
+    groups:
+    - All
+  - key: satellite-soil-moisture
+    groups:
+    - All
+  - key: satellite-sea-surface-temperature
+    groups:
+    - All
+  - key: satellite-lai-fapar
+    groups:
+    - All
+  - key: satellite-ice-sheet-elevation-change
+    groups:
+    - All
+  - key: satellite-precipitation-microwave
+    groups:
+    - All
+  - key: insitu-glaciers-elevation-mass
+    groups:
+    - All
+  - key: satellite-ocean-colour
+    groups:
+    - All
+  - key: satellite-total-column-water-vapour-land-ocean
+    groups:
+    - All
+  - key: satellite-total-column-water-vapour-ocean
+    groups:
+    - All
+  - key: satellite-fire-radiative-power
+    groups:
+    - All
+  - key: satellite-precipitation
+    groups:
+    - All
+  - key: satellite-earth-radiation-budget
+    groups:
+    - All
+  - key: satellite-humidity-profiles
+    groups:
+    - All
+  - key: satellite-ice-sheet-mass-balance
+    groups:
+    - All
+  - key: satellite-upper-troposphere-humidity
+    groups:
+    - All
+  - key: satellite-ozone-v1
+    groups:
+    - All
+  - key: satellite-sea-ice-thickness
+    groups:
+    - All
+  - key: satellite-surface-radiation-budget
+    groups:
+    - All
+  - key: satellite-greenland-ice-sheet-velocity
+    groups:
+    - All
+  - key: satellite-lake-water-temperature
+    groups:
+    - All
+  - key: satellite-lake-water-level
+    groups:
+    - All
+  - key: sis-fisheries-ocean-fronts
+    groups:
+    - All
+  - key: satellite-aerosol-properties
+    groups:
+    - All
+  - key: satellite-fire-burned-area
+    groups:
+    - All
+  - key: satellite-land-cover
+    groups:
+    - All
+  forms:
+  - fields:
+    - "key_1-qc"
+    - "key_1.1-qc"
+    - "1.1.1"
+    - "key_1.2-qc"
+    - "1.2.1"
+    - "key_1.3-qc"
+    - "1.3.1"
+    - "comment_thread"
+    - "key_2-qc"
+    - "key_2.1-qc"
+    - "2.1.1"
+    - "2.1.2"
+    - "2.1.3"
+    - "2.1.4"
+    - "2.1.5"
+    - "comment_thread"
+    - "key_2.2-qc"
+    - "2.2.1"
+    - "key_2.3-qc"
+    - "2.3.1"
+    - "comment_thread"
+    - "key_3-qc"
+    - "key_3.1-qc"
+    - "3.1.1"
+    - "key_3.2-qc"
+    - "3.2.1"
+    - "3.2.2"
+    - "comment_thread"
+    - "comment_thread"
+    - "key_4-qc"
+    - "key_4.1-qc"
+    - "4.1.1"
+    - "4.1.2"
+    - "4.1.3"
+    - "comment_thread"
+    - "key_4.2-qc"
+    - "4.2.1"
+    - "4.2.2"
+    - "comment_thread"
+    - "key_4.3-qc"
+    - "4.3.1"
+    - "4.3.2"
+    - "4.3.3"
+    - "4.3.4"
+    - "comment_thread"
+    - "key_4.4-qc"
+    - "4.4.1"
+    - "4.4.2"
+    - "comment_thread"
+    - "comment_thread"
+    groups:
+    - All
