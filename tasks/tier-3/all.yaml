@@ -9,12 +9,16 @@ tasks:
     ui_schemas:
       - property: use_case_field
         type: review
+      - property: jupyter_url
+        type: review
       - property: final_jupyter_url
         type: review
 
   - key: data-provider
     ui_schemas:
       - property: use_case_field
+        type: review
+      - property: jupyter_url
         type: review
       - property: final_jupyter_url
         type: review
@@ -23,6 +27,8 @@ tasks:
     fields:
       - id: approve_reject_section
     ui_schemas:
+      - property: jupyter_url
+        type: review
       - property: final_jupyter_url
         type: review
 
@@ -31,6 +37,8 @@ tasks:
       - id: approve_reject_section
     ui_schemas:
       - property: use_case_field
+        type: review
+      - property: jupyter_url
         type: review
       - property: final_jupyter_url
         type: review
