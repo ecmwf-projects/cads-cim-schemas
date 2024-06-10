@@ -14,24 +14,30 @@ properties:
     type: string
     property: uc_title
     always_visible: true
-    weight: -5
+    weight: -6
 
   - id: uc_question
     key: uc_question
     type: string
     property: uc_question
     always_visible: true
-    weight: -4
+    weight: -5
 
   - id: uc_methods
     key: uc_methods
     property: uc_methods
     always_visible: true
-    weight: -3
+    weight: -4
 
   - id: uc_assessment_statement
     key: uc_assessment_statement
     property: uc_assessment_statement
+    always_visible: true
+    weight: -3 # Always show at the top
+
+  - id: jupyter_url
+    key: jupyter_url
+    property: final_jupyter_url
     always_visible: true
     weight: -2 # Always show at the top
 
@@ -40,6 +46,7 @@ properties:
     property: final_jupyter_url
     always_visible: true
     weight: -1 # Always show at the top
+
   - id: 'comment_thread'
     key: comment_thread
     property: comment_thread
