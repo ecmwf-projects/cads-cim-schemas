@@ -1,6 +1,6 @@
 {
   "type": "object",
-  "required": ["jupyter_notebook_url"],
+  "required": [],
   "properties": {
     "jupyter_notebook_url": {
       "type": "string"
